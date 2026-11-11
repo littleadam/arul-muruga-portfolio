@@ -133,10 +133,10 @@ export const cv = {
 
 export const cvDe = {
   code: "de",
-  fileBase: "Arul_Muruga_EU_CV_DE",
-  docTitle: "Arul Muruga - EU-Lebenslauf",
+  fileBase: "Arul_Muruga_Lebenslauf_DE",
+  docTitle: "Arul Muruga - Tabellarischer Lebenslauf",
   docDescription:
-    "EU-formatiger Lebenslauf von Arul Muruga, Technischer Projektmanager und Gruppen-Technikarchitekt.",
+    "Tabellarischer Lebenslauf von Arul Muruga, Technischer Projektmanager und Gruppen-Technikarchitekt.",
   labels: {
     summary: "Berufliches Profil",
     achievements: "Wichtigste Erfolge",
