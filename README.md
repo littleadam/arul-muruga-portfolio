@@ -46,25 +46,32 @@ no decorative gradients, glows or illustrations.
 Assets:
 
 - `public/Arul_Muruga_EU_CV.pdf` — the primary, English EU-format CV served by
-  every “Download EU CV” link.
+  every “Download CV” link.
 - `public/Arul_Muruga_EU_CV.docx` — the editable English Word version.
-- `public/Arul_Muruga_EU_CV_DE.pdf` / `.docx` — German EU-format CV.
+- `public/Arul_Muruga_Lebenslauf_DE.pdf` / `.docx` — German tabular
+  Lebenslauf (traditional German format).
+- `public/Arul_Muruga_Europass_CV.pdf` / `.docx` — Europass-format CV.
 - `public/Arul_Muruga_EU_CV_FR.pdf` / `.docx` — French EU-format CV.
 - `public/Arul_Muruga_Resume.docx` — legacy download filename, kept for old
   links; it now contains the same current English CV as `Arul_Muruga_EU_CV.docx`.
 - `public/og-cover.png` — 1200 × 630 social share image, referenced by the
-  Open Graph and Twitter meta tags. Update `og:image` to an absolute URL after
-  the site is deployed so LinkedIn and other platforms can fetch it reliably.
+  Open Graph and Twitter meta tags through the absolute GitHub Pages URL
+  `https://littleadam.github.io/arul-muruga-portfolio/og-cover.png`.
 - `public/favicon.svg` — monogram favicon.
 
-The Contact section keeps every CV download compact: English on one line, then
-German and French together on the next line.
+The “Download CV” button opens a format chooser with four formats — EU CV
+(English), Lebenslauf (German), CV Français and Europass — each available as
+PDF and DOCX. The Contact section lists the same four formats inline.
 
-Regenerate all six EU CV files after editing `scripts/cv-content.mjs`:
+Regenerate every CV file after editing `scripts/cv-content.mjs`:
 
 ```bash
 npm run cv
 ```
+
+The generator writes the EU-format CVs first, then the German tabular
+Lebenslauf and the Europass CV (`scripts/generate-extra-cvs.mjs`), all from the
+same source content.
 
 The ATS check runs entirely in the browser. It reads pasted text or extracts
 text from PDF, DOCX, TXT and Markdown files locally; no job description is

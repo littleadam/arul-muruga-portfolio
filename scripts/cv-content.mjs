@@ -24,7 +24,7 @@ export const cv = {
   role: "Technical Project Manager | Group Technical Architect | AI Transformation & Governance Leader",
   contact: [
     ["Chennai, Tamil Nadu, India", "arulmuruga.ad@gmail.com", "+91 78450 23186"],
-    ["linkedin.com/in/aruldswamy", "github.com/littleadam"],
+    ["linkedin.com/in/aruldswamy", "github.com/littleadam", "littleadam.github.io/arul-muruga-portfolio"],
   ],
   summary:
     "Technical Project Manager and Group Technical Architect with 18 years of engineering experience, built on a deep foundation in Linux, networking (TCP/IP), C/C++ and Python, and a long tenure at HCL Technologies on a Cisco Offshore Development Centre. Has progressed from hands-on systems engineering to leading an AI transformation programme across 65 engineers in 8 teams, with 15+ engineers and 7 Technical Leads under direct management. PMP certified, Generative AI Leader (Google Cloud) and AWS Certified AI Practitioner. Working knowledge of Agile/Scrum and Jira from hands-on engineering, currently studying Agile programme management at scale (PSM I in progress). Focused on AI-native engineering delivery, AI governance and measurable business outcomes.",
@@ -126,6 +126,7 @@ export const cv = {
   additional: [
     "Independent project: algorithmic options trading system in Python, with RSI-based signals, GTT stop-loss management, trailing stops and daily loss-cap controls.",
     "Open to technical programme management, architecture and AI transformation leadership roles in engineering delivery and responsible AI governance.",
+    "Willing to relocate to the job location.",
     "References available on request.",
   ],
 };
@@ -153,7 +154,7 @@ export const cvDe = {
   role: "Technischer Projektmanager | Gruppen-Technikarchitekt | Leiter KI-Transformation & KI-Governance",
   contact: [
     ["Chennai, Tamil Nadu, Indien", "arulmuruga.ad@gmail.com", "+91 78450 23186"],
-    ["linkedin.com/in/aruldswamy", "github.com/littleadam"],
+    ["linkedin.com/in/aruldswamy", "github.com/littleadam", "littleadam.github.io/arul-muruga-portfolio"],
   ],
   summary:
     "Technischer Projektmanager und Gruppen-Technikarchitekt mit 18 Jahren Erfahrung im Engineering und einem fundierten Fundament in Linux, Netzwerktechnik (TCP/IP), C/C++ und Python sowie einer langen Tätigkeit bei HCL Technologies in einem Cisco Offshore Development Centre. Vom operativen Systemtechniker zum Leiter eines KI-Transformationsprogramms mit 65 Ingenieuren in 8 Teams, davon 15+ Ingenieure und 7 Technical Leads in direkter Führungsverantwortung. PMP-zertifiziert, Generative AI Leader (Google Cloud) und AWS Certified AI Practitioner. Praktische Kenntnisse in Agile/Scrum und Jira auf Ingenieursebene; derzeit Weiterbildung im agilen Programmmanagement im Unternehmensmaßstab (PSM I in Vorbereitung). Schwerpunkt auf KI-nativer Engineering-Delivery, KI-Governance und messbaren Geschäftsergebnissen.",
@@ -259,6 +260,7 @@ export const cvDe = {
   additional: [
     "Unabhängiges Projekt: algorithmisches Optionshandelssystem in Python mit RSI-basierten Signalen, GTT-Stop-Loss-Verwaltung, Trailing Stops und täglichen Verlustobergrenzen.",
     "Offen für technisches Programmmanagement, Architektur und Führungsrollen in KI-Transformation, Engineering-Delivery und verantwortungsvoller KI-Governance.",
+    "Bereit, an den Arbeitsort umzuziehen.",
     "Referenzen auf Anfrage.",
   ],
 };
@@ -286,7 +288,7 @@ export const cvFr = {
   role: "Chef de projet technique | Architecte technique de groupe | Responsable transformation et gouvernance IA",
   contact: [
     ["Chennai, Tamil Nadu, Inde", "arulmuruga.ad@gmail.com", "+91 78450 23186"],
-    ["linkedin.com/in/aruldswamy", "github.com/littleadam"],
+    ["linkedin.com/in/aruldswamy", "github.com/littleadam", "littleadam.github.io/arul-muruga-portfolio"],
   ],
   summary:
     "Chef de projet technique et architecte technique de groupe avec 18 ans d'expérience en ingénierie, appuyé sur une solide maîtrise de Linux, des réseaux (TCP/IP), du C/C++ et de Python, ainsi qu'une longue carrière chez HCL Technologies au sein d'un Cisco Offshore Development Centre. Évolution du poste d'ingénieur système opérationnel vers la direction d'un programme de transformation IA réunissant 65 ingénieurs répartis en 8 équipes, dont 15+ ingénieurs et 7 Technical Leads en management direct. Certifié PMP, Generative AI Leader (Google Cloud) et AWS Certified AI Practitioner. Connaissances pratiques d'Agile/Scrum et de Jira au niveau ingénieur ; formation en cours en gestion de programmes Agile à l'échelle (PSM I en cours). Focus sur la livraison d'ingénierie native IA, la gouvernance de l'IA et des résultats commerciaux mesurables.",
@@ -388,12 +390,12 @@ export const cvFr = {
   additional: [
     "Projet personnel : système de trading algorithmique d'options en Python, avec signaux basés sur le RSI, gestion des stop-loss GTT, stops suiveurs et plafonds de perte quotidienne.",
     "Ouvert aux postes de gestion de programmes techniques, d'architecture et de leadership en transformation IA, delivery d'ingénierie et gouvernance responsable de l'IA.",
+    "Disposé à déménager près du lieu de travail.",
     "Références disponibles sur demande.",
   ],
 };
 
 export const cvLocales = {
   en: cv,
-  de: cvDe,
   fr: cvFr,
 };

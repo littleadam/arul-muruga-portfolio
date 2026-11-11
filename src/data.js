@@ -3,6 +3,41 @@ export const CV_DOCX_URL = `${import.meta.env.BASE_URL}Arul_Muruga_EU_CV.docx`;
 
 const CV_BASE = import.meta.env.BASE_URL;
 
+export const CV_FORMATS = [
+  {
+    code: "eu",
+    label: "EU CV",
+    lang: "English",
+    note: "EU-format, 2 pages",
+    pdf: CV_URL,
+    docx: CV_DOCX_URL,
+  },
+  {
+    code: "de",
+    label: "Lebenslauf",
+    lang: "Deutsch",
+    note: "Tabellarischer Lebenslauf",
+    pdf: `${CV_BASE}Arul_Muruga_Lebenslauf_DE.pdf`,
+    docx: `${CV_BASE}Arul_Muruga_Lebenslauf_DE.docx`,
+  },
+  {
+    code: "fr",
+    label: "CV Français",
+    lang: "Français",
+    note: "Format UE, 2 pages",
+    pdf: `${CV_BASE}Arul_Muruga_EU_CV_FR.pdf`,
+    docx: `${CV_BASE}Arul_Muruga_EU_CV_FR.docx`,
+  },
+  {
+    code: "europass",
+    label: "Europass",
+    lang: "English",
+    note: "Europass standard",
+    pdf: `${CV_BASE}Arul_Muruga_Europass_CV.pdf`,
+    docx: `${CV_BASE}Arul_Muruga_Europass_CV.docx`,
+  },
+];
+
 export const CV_LOCALES = [
   {
     code: "en",
@@ -13,8 +48,8 @@ export const CV_LOCALES = [
   {
     code: "de",
     label: "Deutsch",
-    pdf: `${CV_BASE}Arul_Muruga_EU_CV_DE.pdf`,
-    docx: `${CV_BASE}Arul_Muruga_EU_CV_DE.docx`,
+    pdf: `${CV_BASE}Arul_Muruga_Lebenslauf_DE.pdf`,
+    docx: `${CV_BASE}Arul_Muruga_Lebenslauf_DE.docx`,
   },
   {
     code: "fr",
@@ -24,10 +59,17 @@ export const CV_LOCALES = [
   },
 ];
 
+export const availability = {
+  base: "Chennai, India",
+  relocation: "Open to relocation to the job location",
+};
+
 export const profile = {
   name: "Arul Muruga",
   role: "Technical Project Manager | Group Technical Architect | AI Transformation and Governance Leader",
   location: "Chennai, India",
+  website: "https://littleadam.github.io/arul-muruga-portfolio/",
+  websiteDisplay: "littleadam.github.io/arul-muruga-portfolio",
   github: "https://github.com/littleadam",
   linkedin: "https://www.linkedin.com/in/aruldswamy",
   email: "arulmuruga.ad@gmail.com",

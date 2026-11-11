@@ -1,5 +1,6 @@
-import { ArrowRight, Download, MapPin } from "lucide-react";
-import { certifications, CV_LOCALES, CV_URL, profile } from "../data";
+import { ArrowRight, MapPin } from "lucide-react";
+import { certifications, profile } from "../data";
+import CvDownload from "./CvDownload";
 
 const atAGlance = [
   ["Tenure", "18 years in engineering"],
@@ -7,6 +8,7 @@ const atAGlance = [
   ["Scope", "65 engineers · 8 teams"],
   ["Leadership", "7 Technical Leads · 15+ engineers"],
   ["Governance", "EU AI Act · ISO/IEC 42001"],
+  ["Relocation", "Willing to move to the job location"],
 ];
 
 export default function Hero() {
@@ -41,24 +43,7 @@ export default function Hero() {
               View experience
               <ArrowRight size={16} strokeWidth={1.9} aria-hidden="true" />
             </a>
-            <a href={CV_URL} download className="btn btn-secondary" title="EU-format CV (PDF)">
-              Download CV
-              <Download size={15} strokeWidth={1.9} aria-hidden="true" />
-            </a>
-
-            <span className="hero-cv-langs">
-              <span className="hero-cv-label">CV also in</span>
-              {CV_LOCALES.slice(1).map((locale) => (
-                <a
-                  key={locale.code}
-                  href={locale.pdf}
-                  download
-                  title={`${locale.label} CV (PDF)`}
-                >
-                  {locale.label}
-                </a>
-              ))}
-            </span>
+            <CvDownload />
           </div>
 
           <div className="hero-credentials">

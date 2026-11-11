@@ -2,13 +2,14 @@ import {
   ArrowDownToLine,
   ArrowUpRight,
   Github,
+  Globe,
   Linkedin,
   Mail,
   MapPin,
   MessageCircle,
   Phone,
 } from "lucide-react";
-import { CV_LOCALES, profile } from "../data";
+import { availability, CV_FORMATS, profile } from "../data";
 import Reveal from "./Reveal";
 
 const contactLinks = [
@@ -47,9 +48,14 @@ const contactLinks = [
     icon: Github,
     external: true,
   },
+  {
+    label: "Website",
+    value: profile.websiteDisplay,
+    href: profile.website,
+    icon: Globe,
+    external: true,
+  },
 ];
-
-const [englishCv, ...otherCvs] = CV_LOCALES;
 
 export default function Contact() {
   return (
@@ -80,9 +86,9 @@ export default function Contact() {
 
             <p className="contact-location">
               <MapPin size={14} strokeWidth={1.8} aria-hidden="true" />
-              {profile.location}
+              {availability.base}
               <span aria-hidden="true">·</span>
-              IST (UTC+5:30)
+              {availability.relocation}
             </p>
           </Reveal>
 
@@ -122,48 +128,37 @@ export default function Contact() {
               <div className="cv-downloads">
                 <span className="micro cv-downloads-label">
                   <ArrowDownToLine size={13} strokeWidth={1.8} aria-hidden="true" />
-                  CV downloads
+                  CV downloads · 4 formats
                 </span>
 
-                <div className="cv-download-row">
-                  <span className="cv-locale">{englishCv.label}</span>
-                  <a
-                    href={englishCv.pdf}
-                    download
-                    aria-label={`${englishCv.label} CV, PDF`}
-                  >
-                    PDF
-                  </a>
-                  <a
-                    href={englishCv.docx}
-                    download
-                    aria-label={`${englishCv.label} CV, Word`}
-                  >
-                    DOCX
-                  </a>
-                </div>
-
-                <div className="cv-download-row">
-                  {otherCvs.map((locale) => (
-                    <span className="cv-locale-group" key={locale.code}>
-                      <span className="cv-locale">{locale.label}</span>
-                      <a
-                        href={locale.pdf}
-                        download
-                        aria-label={`${locale.label} CV, PDF`}
-                      >
-                        PDF
-                      </a>
-                      <a
-                        href={locale.docx}
-                        download
-                        aria-label={`${locale.label} CV, Word`}
-                      >
-                        DOCX
-                      </a>
-                    </span>
+                <ul className="cv-format-list">
+                  {CV_FORMATS.map((format) => (
+                    <li key={format.code}>
+                      <span className="cv-format-info">
+                        <strong>{format.label}</strong>
+                        <span>
+                          {format.lang} · {format.note}
+                        </span>
+                      </span>
+                      <span className="cv-format-links">
+                        <a
+                          href={format.pdf}
+                          download
+                          aria-label={`${format.label} (${format.lang}), PDF`}
+                        >
+                          PDF
+                        </a>
+                        <a
+                          href={format.docx}
+                          download
+                          aria-label={`${format.label} (${format.lang}), Word`}
+                        >
+                          DOCX
+                        </a>
+                      </span>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
             </div>
           </Reveal>
@@ -185,6 +180,14 @@ export function Footer() {
         <p className="footer-role">
           Technical Project Manager | Group Technical Architect | AI Transformation and Governance Leader
         </p>
+        <a
+          className="footer-site"
+          href={profile.website}
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          {profile.websiteDisplay}
+        </a>
         <a className="footer-top" href="#top">
           Back to top
         </a>

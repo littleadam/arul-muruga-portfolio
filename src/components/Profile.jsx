@@ -1,4 +1,4 @@
-import { about, certifications } from "../data";
+import { about, availability, certifications } from "../data";
 import Reveal from "./Reveal";
 
 const mandate = [
@@ -7,7 +7,7 @@ const mandate = [
   ["Direct leadership", "7 Technical Leads · 15+ engineers"],
   ["Focus", "AI-native delivery · technical architecture"],
   ["Governance", "EU AI Act · ISO/IEC 42001"],
-  ["Based", "Chennai, India"],
+  ["Based", `${availability.base} · open to relocation`],
   ["Languages", "English · Tamil · German (A1, certification in progress)"],
 ];
 

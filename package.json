@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "cv": "node scripts/generate-eu-cv-docx.mjs && node scripts/generate-eu-cv-pdf.mjs"
+    "cv": "node scripts/generate-eu-cv-docx.mjs && node scripts/generate-eu-cv-pdf.mjs && node scripts/generate-extra-cvs.mjs"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "^5.2.8",
