@@ -1,0 +1,28 @@
+{
+  "name": "arul-muruga-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "cv": "node scripts/generate-eu-cv-docx.mjs && node scripts/generate-eu-cv-pdf.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/fraunces": "^5.2.8",
+    "@fontsource-variable/inter": "^5.2.8",
+    "@fontsource-variable/source-serif-4": "^5.3.1",
+    "lucide-react": "^0.468.0",
+    "mammoth": "^1.13.0",
+    "pdfjs-dist": "^6.5.438",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.7.0",
+    "docx": "^9.15.2",
+    "pdfkit": "^0.20.2",
+    "vite": "^7.1.7"
+  }
+}

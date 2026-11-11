@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="6" fill="#FBFAF7"/>
+  <rect x="4.5" y="4.5" width="55" height="55" rx="3" fill="none" stroke="#17324D" stroke-opacity="0.55"/>
+  <text x="32" y="41" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="24" letter-spacing="0.5" fill="#17324D">AM</text>
+</svg>
