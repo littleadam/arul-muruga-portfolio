@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://littleadam.github.io/arul-muruga-portfolio/sitemap.xml
