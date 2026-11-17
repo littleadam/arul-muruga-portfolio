@@ -28,8 +28,10 @@ contents of `dist/` can be hosted at a domain root or in a subdirectory.
 All copy and links live in one place:
 
 - `src/data.js` — impact metrics, program phases, career arc, expertise,
-  operating principles, project details, LinkedIn/GitHub links and CV URLs.
-- `src/components/` — one component per section.
+  operating principles, the delivery-project portfolio, LinkedIn/GitHub links
+  and CV URLs.
+- `src/components/` — one component per section, including
+  `DeliveryWork.jsx` for the employer-grouped project portfolio.
 - `src/components/AtsCheck.jsx` — the ATS check UI (paste or upload a job
   description, then show the score, breakdown and gaps).
 - `src/ats.js` — the keyword/requirements taxonomy and scoring logic behind the
@@ -73,7 +75,9 @@ npm run cv
 
 The generator writes the EU-format CVs first, then the German tabular
 Lebenslauf and the Europass CV (`scripts/generate-extra-cvs.mjs`), all from the
-same source content.
+same source content. Every CV includes a compact selected-projects index
+(project, role/team, customers and technologies); the website’s “Projects”
+section carries the full contribution detail.
 
 The ATS check runs entirely in the browser. It reads pasted text or extracts
 text from PDF, DOCX, TXT and Markdown files locally; no job description is
@@ -101,7 +105,7 @@ and publishes `dist/` on every push to `main`. One-time setup:
 The relative base path (`base: "./"`) means the site works under
 `/repository-name/` without further configuration.
 
-All six CV files are static assets in `public/` and are included in the build.
+All eight CV files are static assets in `public/` and are included in the build.
 
 ## Accessibility & performance
 

@@ -11,6 +11,7 @@ export const cv = {
     summary: "Professional summary",
     achievements: "Key achievements",
     experience: "Work experience",
+    projects: "Selected delivery projects",
     education: "Education and training",
     languages: "Language skills",
     digital: "Digital skills",
@@ -33,7 +34,6 @@ export const cv = {
     "93% build-time reduction delivered for the wider engineering organization.",
     "2 AI tools deployed in Year 1 and 6 in Year 2, against a 12-tool target for Year 3.",
     "100% SLA compliance sustained across 13+ consecutive weeks.",
-    "65 engineers across 8 teams, with 7 Technical Leads and 15+ engineers reporting directly.",
   ],
   experience: [
     {
@@ -48,11 +48,9 @@ export const cv = {
         "Manage and mentor a leadership bench of 7 Technical Leads and 15+ engineers directly, within a wider organization of 65 engineers across 8 teams.",
         "Serve as the client-facing delivery interface in the Cisco ODC: align priorities with Cisco stakeholders and work directly with Cisco's end customers to debug and resolve issues on the client's behalf.",
         "Own technical architecture and delivery governance, applying Linux, networking, C/C++, Python, Jenkins, Docker and multi-architecture build expertise built over 18 years.",
-        "Apply Agile/Scrum and Jira at engineer level in day-to-day delivery; currently studying Agile program management at scale (PSM I in progress).",
         "Head resource demand management for the delivery unit: gather open positions from teams, coordinate candidate sourcing with HR, select interview panelists, collect panel reviews and update HR teams.",
         "Align AI adoption with the EU AI Act and ISO/IEC 42001, treating governance as a design input rather than retrofitted documentation.",
-        "Handle on-site, remote and 24x7 support teams, monthly process compliance audits (PCA) and SoW renewals.",
-        "Bring 18 years of experience interviewing and training engineers, including running interview panels and developing technical talent.",
+        "Handle on-site, remote and 24x7 support teams, monthly process compliance audits (PCA) and SoW renewals, backed by 18 years of interviewing and training engineers.",
       ],
     },
     {
@@ -63,7 +61,6 @@ export const cv = {
       bullets: [
         "Developed software solutions for energy meters, integrating internet-based data handling to enhance efficiency and reduce costs.",
         "Designed and deployed an HTTP server for embedded systems, streamlining data transmission processes.",
-        "Documented technical solutions, fostering knowledge sharing and improving team collaboration.",
       ],
     },
     {
@@ -74,8 +71,65 @@ export const cv = {
       bullets: [
         "Engineered IoT-based solutions, including sensor drivers and interfaces, optimizing system performance and reliability.",
         "Improved PCB designs, enhancing energy efficiency and sensitivity for IoT applications.",
-        "Conducted product demonstrations, showcasing technical capabilities to support business development.",
       ],
+    },
+  ],
+  projects: [
+    {
+      name: "Cisco Secured Linux",
+      meta: "Team Lead (12) · Cisco Systems",
+      tech: "Linux, runtime defense (RTD), OSC, SafeC, containerization, Jenkins",
+      detail:
+        "Implemented core modules for secure runtime application protection on Cisco Linux platforms; integrated security instrumentation into Jenkins CI/CD for pre-release threat modeling and joined customer debugging sessions on runtime behavior.",
+    },
+    {
+      name: "Access control list over Cisco IOS",
+      meta: "Team Lead (11) · RJIL, Google, Facebook",
+      tech: "C, Python, Cisco IOS-XR, YANG/NETCONF",
+      detail:
+        "Designed Layer 3 IPv4/IPv6 ACL modules for ingress and egress traffic, with protocol handlers, packet-match engines and control-plane integration; resolved production escalations with Cisco TAC and product owners.",
+    },
+    {
+      name: "QoS / Policy Manager over Cisco IOS",
+      meta: "Team Lead (11) · RJIL, Google, Facebook",
+      tech: "C, Python, Cisco IOS-XR, YANG/NETCONF",
+      detail:
+        "Developed MQC classification, policing and scheduling for enterprise and service-provider routers; led data-path performance optimization, fixed field defects across geographies and supported regression automation.",
+    },
+    {
+      name: "Ethernet Connectivity Fault Management",
+      meta: "Team Lead (8) · Wells Fargo, NASA, Visa",
+      tech: "C, Python, Cisco NX-OS, AAA, Ethernet, ACME, GDB",
+      detail:
+        "Built Layer 2 OAM components for Cisco NX-OS with MEPs, MEGs and CFM message handling; led customer fault-isolation debugging with GDB and custom traces, and produced support documentation and knowledge-sharing sessions.",
+    },
+    {
+      name: "Broadband Network Gateway",
+      meta: "Senior Engineer · Cygate",
+      tech: "C, Python, Cisco OS, AAA, ACME, VPN, L2TP, GDB",
+      detail:
+        "Implemented PPPoE, IPoE and L2TP stacks with a subscriber session manager and policy provisioning; drove RCA on session drops and authentication failures and added debug CLI and trace utilities.",
+    },
+    {
+      name: "LTE Gateway Router",
+      meta: "Senior Engineer · Cisco Systems, AT&T",
+      tech: "C, Cisco OS, L2TP, GRE, ACME, 3GPP, GDB",
+      detail:
+        "Developed GRE/L2TP data and control plane for the LTE packet gateway, with QoS and lawful intercept aligned to 3GPP; simulated high-throughput mobile core workloads and fixed packet-loss defects.",
+    },
+    {
+      name: "GGSN Gateway Router",
+      meta: "Software Engineer · Cisco, AT&T, Belgacom, Eircom, Turkcell, Truemove",
+      tech: "C, Cisco OS, L2TP, GRE, ACME, GDB",
+      detail:
+        "Implemented PDP context setup, billing integration and data-path optimization; reworked memory management for large subscriber bases and resolved GRE/L2TP field failures.",
+    },
+    {
+      name: "IP Modem for Metering",
+      meta: "Software Engineer · NPDC Ltd., Thailand Electricity Board",
+      tech: "C, GPRS, RTC, EEPROM, 8-bit microprocessors",
+      detail:
+        "Developed low-footprint GPRS remote metering on 8-bit processors, handled EEPROM/RTC firmware interfaces and supported pilot rollout and field debugging with electric-utility vendors.",
     },
   ],
   education: {
@@ -128,7 +182,6 @@ export const cv = {
     "Independent project: algorithmic options trading system in Python, with RSI-based signals, GTT stop-loss management, trailing stops and daily loss-cap controls.",
     "Open to technical program management, architecture and AI transformation leadership roles in engineering delivery and responsible AI governance.",
     "Willing to relocate to the job location.",
-    "References available on request.",
   ],
 };
 
@@ -142,6 +195,7 @@ export const cvDe = {
     summary: "Berufliches Profil",
     achievements: "Wichtigste Erfolge",
     experience: "Berufserfahrung",
+    projects: "Ausgewählte Projekte",
     education: "Ausbildung",
     languages: "Sprachkenntnisse",
     digital: "Digitale Kompetenzen",
@@ -164,7 +218,6 @@ export const cvDe = {
     "93 % kürzere Build-Zeiten für die gesamte Engineering-Organisation.",
     "2 KI-Tools im ersten Jahr und 6 im zweiten Jahr produktiv eingeführt, bei einem Ziel von 12 Tools für Jahr 3.",
     "100 % SLA-Erfüllung über 13+ aufeinanderfolgende Wochen.",
-    "65 Ingenieure in 8 Teams, davon 7 Technical Leads und 15+ Ingenieure mit direkter Berichtslinie.",
   ],
   experience: [
     {
@@ -178,11 +231,9 @@ export const cvDe = {
         "Leitung eines KI-Transformationsprogramms im Cisco ODC und Förderung der Einführung von KI-Tools in den Engineering-Teams.",
         "Führung und Mentoring eines Führungskräfte-Pools aus 7 Technical Leads und 15+ Ingenieuren direkt, innerhalb einer Organisation von 65 Ingenieuren in 8 Teams; zusätzlich kundenseitige Delivery-Schnittstelle zu Cisco und dessen Endkunden.",
         "Verantwortung für technische Architektur und Delivery-Governance auf Basis von Linux, Netzwerktechnik, C/C++, Python, Jenkins, Docker und Multi-Architektur-Builds aus 18 Jahren Praxis.",
-        "Anwendung von Agile/Scrum und Jira auf Ingenieursebene im Tagesgeschäft; derzeit Weiterbildung im agilen Programmmanagement im Unternehmensmaßstab (PSM I in Vorbereitung).",
         "Leitung des Ressourcenbedarfsmanagements für die Delivery-Unit: Erfassung offener Stellen aus den Teams, Koordination der Kandidatensuche mit HR, Auswahl von Interview-Panels, Sammlung der Panel-Bewertungen und Aktualisierung der HR-Teams.",
         "Ausrichtung der KI-Einführung an EU AI Act und ISO/IEC 42001 - Governance als Designvorgabe statt nachträglicher Dokumentation.",
-        "Verantwortung für Onsite-, Remote- und 24x7-Support-Teams, monatliche Process-Compliance-Audits (PCA) und SoW-Verlängerungen.",
-        "18 Jahre Erfahrung in der Führung von Bewerbungsgesprächen und der Ausbildung von Ingenieuren, einschließlich Interview-Panels und technischer Talententwicklung.",
+        "Verantwortung für Onsite-, Remote- und 24x7-Support-Teams, monatliche Process-Compliance-Audits (PCA) und SoW-Verlängerungen, gestützt auf 18 Jahre Erfahrung in Bewerbungsgesprächen und Ingenieurausbildung.",
       ],
     },
     {
@@ -191,9 +242,7 @@ export const cvDe = {
       location: "Chennai, Indien",
       dates: "Aug 2009 - Juni 2010",
       bullets: [
-        "Entwicklung von Softwarelösungen für Energiezähler mit internetbasierter Datenverarbeitung zur Effizienzsteigerung und Kostenreduktion.",
-        "Konzeption und Einsatz eines HTTP-Servers für eingebettete Systeme zur Optimierung der Datenübertragung.",
-        "Technische Dokumentation zur Förderung des Wissensaustauschs und der Teamzusammenarbeit.",
+        "Entwicklung von Softwarelösungen für Energiezähler mit internetbasierter Datenverarbeitung sowie Konzeption eines HTTP-Servers für eingebettete Systeme.",
       ],
     },
     {
@@ -202,10 +251,66 @@ export const cvDe = {
       location: "Chennai, Indien",
       dates: "Juli 2008 - Juli 2009",
       bullets: [
-        "Entwicklung IoT-basierter Lösungen, einschließlich Sensortreibern und Schnittstellen, zur Optimierung von Systemleistung und Zuverlässigkeit.",
-        "Verbesserung von PCB-Designs zur Steigerung von Energieeffizienz und Empfindlichkeit für IoT-Anwendungen.",
-        "Durchführung von Produktdemonstrationen zur Präsentation der technischen Möglichkeiten und Unterstützung der Geschäftsentwicklung.",
+        "Entwicklung IoT-basierter Lösungen mit Sensortreibern und Schnittstellen sowie Verbesserung von PCB-Designs für Energieeffizienz und Empfindlichkeit.",
       ],
+    },
+  ],
+  projects: [
+    {
+      name: "Cisco Secured Linux",
+      meta: "Teamleiter (12) · Cisco Systems",
+      tech: "Linux, Runtime Defense (RTD), OSC, SafeC, Containerisierung, Jenkins",
+      detail:
+        "Implementierung von Kernmodulen für den sicheren Laufzeitschutz von Cisco Linux-Plattformen; Integration von Sicherheitsinstrumentierung in Jenkins-CI/CD für Bedrohungsmodellierung vor dem Release sowie Kundendebugging zum Laufzeitverhalten.",
+    },
+    {
+      name: "Access Control List über Cisco IOS",
+      meta: "Teamleiter (11) · RJIL, Google, Facebook",
+      tech: "C, Python, Cisco IOS-XR, YANG/NETCONF",
+      detail:
+        "Entwicklung von Layer-3-ACL-Modulen für IPv4/IPv6-Filter in Ein- und Ausgangsrichtung, Protokoll- und Packet-Match-Engines sowie Control-Plane-Integration; Bearbeitung von Produktionseskalationen mit Cisco TAC und Product Owners.",
+    },
+    {
+      name: "QoS-/Policy-Manager über Cisco IOS",
+      meta: "Teamleiter (11) · RJIL, Google, Facebook",
+      tech: "C, Python, Cisco IOS-XR, YANG/NETCONF",
+      detail:
+        "Entwicklung von MQC-Klassifizierung, Policing und Scheduling für Enterprise- und Service-Provider-Router; Leistungsoptimierung der Datenpfad-Verarbeitung, Behebung von Feldfehlern und Regressionstests.",
+    },
+    {
+      name: "Ethernet Connectivity Fault Management",
+      meta: "Teamleiter (8) · Wells Fargo, NASA, Visa",
+      tech: "C, Python, Cisco NX-OS, AAA, Ethernet, ACME, GDB",
+      detail:
+        "Entwicklung von Layer-2-OAM-Komponenten für Cisco NX-OS mit MEPs, MEGs und CFM-Nachrichtenverarbeitung; Fehlerisolierung mit GDB und Trace-Tools sowie Dokumentation und Wissensvermittlung für Supportteams.",
+    },
+    {
+      name: "Broadband Network Gateway",
+      meta: "Senior Engineer · Cygate",
+      tech: "C, Python, Cisco OS, AAA, ACME, VPN, L2TP, GDB",
+      detail:
+        "Implementierung von PPPoE-, IPoE- und L2TP-Stacks mit Session-Manager und Richtlinienbereitstellung; Ursachenanalyse bei Session-Abbrüchen und Authentifizierungsfehlern sowie Debug-CLI und Trace-Tools.",
+    },
+    {
+      name: "LTE Gateway Router",
+      meta: "Senior Engineer · Cisco Systems, AT&T",
+      tech: "C, Cisco OS, L2TP, GRE, ACME, 3GPP, GDB",
+      detail:
+        "Entwicklung des GRE-/L2TP-Daten- und Control-Planes für das LTE-Packet-Gateway, QoS und Lawful Intercept nach 3GPP; Simulation mobiler Core-Last und Behebung von Paketverlustfehlern.",
+    },
+    {
+      name: "GGSN Gateway Router",
+      meta: "Software Engineer · Cisco, AT&T, Belgacom, Eircom, Turkcell, Truemove",
+      tech: "C, Cisco OS, L2TP, GRE, ACME, GDB",
+      detail:
+        "Implementierung von PDP-Kontextaufbau, Abrechnungsintegration und Datenpfad-Optimierung; Überarbeitung der Speicherverwaltung für große Teilnehmerzahlen und Behebung von GRE-/L2TP-Feldfehlern.",
+    },
+    {
+      name: "IP-Modem für Energiemessung",
+      meta: "Software Engineer · NPDC Ltd., Thailand Electricity Board",
+      tech: "C, GPRS, RTC, EEPROM, 8-Bit-Mikroprozessoren",
+      detail:
+        "Entwicklung kompakter Embedded-Software für GPRS-Fernauslesung auf 8-Bit-Prozessoren, Firmware-Schnittstellen zu EEPROM und RTC sowie Unterstützung bei Pilotrollout und Feldtests mit Energieversorgern.",
     },
   ],
   education: {
@@ -259,10 +364,7 @@ export const cvDe = {
     "AWS Certified AI Practitioner - Amazon Web Services (gültig bis Sep 2029)",
   ],
   additional: [
-    "Unabhängiges Projekt: algorithmisches Optionshandelssystem in Python mit RSI-basierten Signalen, GTT-Stop-Loss-Verwaltung, Trailing Stops und täglichen Verlustobergrenzen.",
-    "Offen für technisches Programmmanagement, Architektur und Führungsrollen in KI-Transformation, Engineering-Delivery und verantwortungsvoller KI-Governance.",
-    "Bereit, an den Arbeitsort umzuziehen.",
-    "Referenzen auf Anfrage.",
+    "Unabhängiges Projekt: algorithmisches Optionshandelssystem in Python mit RSI-basierten Signalen, GTT-Stop-Loss-Verwaltung, Trailing Stops und täglichen Verlustobergrenzen. Offen für technisches Programmmanagement, Architektur und Führungsrollen in KI-Transformation, Engineering-Delivery und verantwortungsvoller KI-Governance; bereit, an den Arbeitsort umzuziehen.",
   ],
 };
 
@@ -276,6 +378,7 @@ export const cvFr = {
     summary: "Profil professionnel",
     achievements: "Réalisations clés",
     experience: "Expérience professionnelle",
+    projects: "Projets sélectionnés",
     education: "Formation",
     languages: "Compétences linguistiques",
     digital: "Compétences numériques",
@@ -298,7 +401,6 @@ export const cvFr = {
     "Réduction de 93 % des temps de build pour l'ensemble de l'organisation d'ingénierie.",
     "2 outils d'IA déployés en première année et 6 en deuxième année, pour un objectif de 12 outils en année 3.",
     "100 % de conformité SLA maintenue pendant 13+ semaines consécutives.",
-    "65 ingénieurs répartis en 8 équipes, dont 7 Technical Leads et 15+ ingénieurs en reporting direct.",
   ],
   experience: [
     {
@@ -313,11 +415,9 @@ export const cvFr = {
         "Manager et accompagner un vivier de direction composé de 7 Technical Leads et de 15+ ingénieurs en direct, au sein d'une organisation de 65 ingénieurs répartis en 8 équipes.",
         "Servir d'interface de livraison côté client au sein du Cisco ODC : aligner les priorités avec les parties prenantes de Cisco et travailler directement avec les clients finaux de Cisco pour déboguer et résoudre les incidents pour le compte du client.",
         "Piloter l'architecture technique et la gouvernance de la livraison en mobilisant Linux, les réseaux, le C/C++, Python, Jenkins, Docker et les builds multi-architectures acquis en 18 ans.",
-        "Utiliser Agile/Scrum et Jira au niveau ingénieur dans le travail quotidien ; formation en cours en gestion de programmes Agile à l'échelle (PSM I en cours).",
         "Diriger la gestion de la demande de ressources pour l'unité de livraison : recueil des postes ouverts auprès des équipes, coordination du sourcing avec les RH, sélection des jurys d'entretien, collecte des évaluations et mise à jour des équipes RH.",
         "Aligner l'adoption de l'IA sur l'EU AI Act et l'ISO/IEC 42001, en traitant la gouvernance comme une contrainte de conception plutôt qu'une documentation ajoutée après coup.",
-        "Superviser les équipes de support sur site, à distance et 24x7, les audits mensuels de conformité des processus (PCA) et les renouvellements de SoW.",
-        "18 ans d'expérience dans la conduite d'entretiens et la formation d'ingénieurs, y compris l'animation de jurys et le développement des talents techniques.",
+        "Superviser les équipes de support sur site, à distance et 24x7, les audits mensuels de conformité des processus (PCA) et les renouvellements de SoW, avec 18 ans d'expérience en conduite d'entretiens et formation d'ingénieurs.",
       ],
     },
     {
@@ -328,7 +428,6 @@ export const cvFr = {
       bullets: [
         "Développement de solutions logicielles pour compteurs d'énergie, avec intégration du traitement de données par internet pour améliorer l'efficacité et réduire les coûts.",
         "Conception et déploiement d'un serveur HTTP pour systèmes embarqués, simplifiant les processus de transmission de données.",
-        "Documentation des solutions techniques, favorisant le partage des connaissances et la collaboration au sein de l'équipe.",
       ],
     },
     {
@@ -339,8 +438,65 @@ export const cvFr = {
       bullets: [
         "Développement de solutions basées sur l'IoT, notamment des pilotes de capteurs et des interfaces, optimisant les performances et la fiabilité du système.",
         "Amélioration des conceptions de PCB, renforçant l'efficacité énergétique et la sensibilité des applications IoT.",
-        "Réalisation de démonstrations produit pour présenter les capacités techniques et soutenir le développement commercial.",
       ],
+    },
+  ],
+  projects: [
+    {
+      name: "Cisco Secured Linux",
+      meta: "Team Lead (12) · Cisco Systems",
+      tech: "Linux, runtime defense (RTD), OSC, SafeC, conteneurisation, Jenkins",
+      detail:
+        "Implémentation des modules centraux de protection des applications à l'exécution sur les plateformes Linux de Cisco ; instrumentation de sécurité intégrée à Jenkins CI/CD pour la modélisation des menaces avant livraison et participation aux sessions de débogage client.",
+    },
+    {
+      name: "Access control list sur Cisco IOS",
+      meta: "Team Lead (11) · RJIL, Google, Facebook",
+      tech: "C, Python, Cisco IOS-XR, YANG/NETCONF",
+      detail:
+        "Conception de modules ACL de couche 3 avec filtres IPv4/IPv6 entrants et sortants, gestionnaires de protocoles et moteurs de correspondance de paquets intégrés au plan de contrôle ; résolution des escalations de production avec Cisco TAC.",
+    },
+    {
+      name: "QoS / Policy Manager sur Cisco IOS",
+      meta: "Team Lead (11) · RJIL, Google, Facebook",
+      tech: "C, Python, Cisco IOS-XR, YANG/NETCONF",
+      detail:
+        "Développement de la classification, du policing et de l'ordonnancement MQC pour les routeurs d'entreprise et opérateurs ; optimisation des performances du plan de données, correction de défauts terrain et automatisation des régressions.",
+    },
+    {
+      name: "Ethernet Connectivity Fault Management",
+      meta: "Team Lead (8) · Wells Fargo, NASA, Visa",
+      tech: "C, Python, Cisco NX-OS, AAA, Ethernet, ACME, GDB",
+      detail:
+        "Développement de composants OAM de couche 2 pour Cisco NX-OS avec MEP, MEG et traitement des messages CFM ; isolation des défauts avec GDB et traces personnalisées, documentation et partage de connaissances.",
+    },
+    {
+      name: "Broadband Network Gateway",
+      meta: "Senior Engineer · Cygate",
+      tech: "C, Python, Cisco OS, AAA, ACME, VPN, L2TP, GDB",
+      detail:
+        "Mise en œuvre des piles PPPoE, IPoE et L2TP avec gestionnaire de sessions et provisionnement des politiques ; analyse des causes de coupures de session et d'échecs d'authentification, outils de debug et de trace.",
+    },
+    {
+      name: "LTE Gateway Router",
+      meta: "Senior Engineer · Cisco Systems, AT&T",
+      tech: "C, Cisco OS, L2TP, GRE, ACME, 3GPP, GDB",
+      detail:
+        "Développement des plans de données et de contrôle du packet gateway LTE avec GRE et L2TP, QoS et interception légale conformes 3GPP ; simulation de charges mobiles élevées et correction des pertes de paquets.",
+    },
+    {
+      name: "GGSN Gateway Router",
+      meta: "Software Engineer · Cisco, AT&T, Belgacom, Eircom, Turkcell, Truemove",
+      tech: "C, Cisco OS, L2TP, GRE, ACME, GDB",
+      detail:
+        "Mise en œuvre du contexte PDP, de la facturation et de l'optimisation du plan de données ; refonte de la gestion mémoire pour de grands parcs d'abonnés et résolution d'incidents GRE/L2TP.",
+    },
+    {
+      name: "IP Modem for Metering",
+      meta: "Software Engineer · NPDC Ltd., Thailand Electricity Board",
+      tech: "C, GPRS, RTC, EEPROM, microprocesseurs 8 bits",
+      detail:
+        "Développement d'un logiciel embarqué compact pour la télérelève GPRS sur processeurs 8 bits, interfaces firmware EEPROM/RTC et support du déploiement pilote et du débogage terrain avec les opérateurs.",
     },
   ],
   education: {
@@ -391,9 +547,7 @@ export const cvFr = {
   ],
   additional: [
     "Projet personnel : système de trading algorithmique d'options en Python, avec signaux basés sur le RSI, gestion des stop-loss GTT, stops suiveurs et plafonds de perte quotidienne.",
-    "Ouvert aux postes de gestion de programmes techniques, d'architecture et de leadership en transformation IA, delivery d'ingénierie et gouvernance responsable de l'IA.",
-    "Disposé à déménager près du lieu de travail.",
-    "Références disponibles sur demande.",
+    "Ouvert aux postes de gestion de programmes techniques, d'architecture et de leadership en transformation IA, delivery d'ingénierie et gouvernance responsable de l'IA ; disposé à déménager près du lieu de travail.",
   ],
 };
 

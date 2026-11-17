@@ -1,5 +1,6 @@
 import Contact, { Footer } from "./components/Contact";
 import AtsCheck from "./components/AtsCheck";
+import DeliveryWork from "./components/DeliveryWork";
 import Experience from "./components/Experience";
 import Expertise from "./components/Expertise";
 import Hero from "./components/Hero";
@@ -22,6 +23,7 @@ export default function App() {
         <Profile />
         <Programme />
         <Experience />
+        <DeliveryWork />
         <Expertise />
         <Project />
         <AtsCheck />

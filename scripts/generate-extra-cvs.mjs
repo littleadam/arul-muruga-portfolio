@@ -301,6 +301,30 @@ function jobBlocks(job, options = {}) {
   return blocks;
 }
 
+function pdfProjects(doc, cvData, accent) {
+  if (!cvData.projects?.length) return;
+  pdfSection(doc, cvData.labels.projects, accent);
+  cvData.projects.forEach((project) => {
+    const blocks = [
+      {
+        text: `${project.name} — ${project.meta}`,
+        bold: true,
+        size: 8.9,
+        after: 0,
+      },
+      { text: project.tech, italics: true, size: 7.9, color: PDF_COLORS.muted, after: 4 },
+    ];
+    blocks.forEach((block) => {
+      const height = blockHeight(doc, block, CONTENT_WIDTH);
+      if (doc.y + height > BOTTOM) {
+        doc.addPage();
+        doc.y = MARGIN;
+      }
+      doc.y = drawBlock(doc, block, MARGIN, doc.y, CONTENT_WIDTH);
+    });
+  });
+}
+
 /* ---------------------------------------------------------------- */
 /* German tabular Lebenslauf                                         */
 /* ---------------------------------------------------------------- */
@@ -363,6 +387,8 @@ function writeLebenslaufPdf(cvData, outFile) {
       cvData.experience.map((job) => ({ label: job.dates, blocks: jobBlocks(job) })),
       { divider: true }
     );
+
+    pdfProjects(doc, cvData, PDF_COLORS.accent);
 
     pdfSection(doc, "Ausbildung");
     pdfTable(doc, [
@@ -515,6 +541,8 @@ function writeEuropassPdf(cvData, outFile) {
       { labelWidth: 108, labelColor: PDF_COLORS.europass, divider: true }
     );
 
+    pdfProjects(doc, cvData, PDF_COLORS.europass);
+
     pdfSection(doc, "Education and training", PDF_COLORS.europass);
     pdfTable(doc, [
       {
@@ -572,10 +600,12 @@ function writeEuropassPdf(cvData, outFile) {
     pdfSection(doc, "Additional information", PDF_COLORS.europass);
     pdfTable(
       doc,
-      cvData.additional.map((item) => ({
-        label: "Note",
-        blocks: [{ text: item, size: 8.8, bullet: true }],
-      })),
+      cvData.additional
+        .filter((item) => !/^(Open to|Willing to relocate)/.test(item))
+        .map((item) => ({
+          label: "Note",
+          blocks: [{ text: item, size: 8.8, bullet: true }],
+        })),
       { labelWidth: 96, labelColor: PDF_COLORS.europass }
     );
 
@@ -728,6 +758,34 @@ function docxJobBlocks(job) {
   return blocks;
 }
 
+function docxProjects(cvData) {
+  if (!cvData.projects?.length) return [];
+  return cvData.projects.flatMap((project) => [
+    new Paragraph({
+      spacing: { before: 80, after: 10 },
+      children: [
+        new TextRun({
+          text: `${project.name} — ${project.meta}`,
+          bold: true,
+          size: 18,
+          color: DOCX_COLORS.ink,
+        }),
+      ],
+    }),
+    new Paragraph({
+      spacing: { after: 55 },
+      children: [
+        new TextRun({
+          text: project.tech,
+          italics: true,
+          size: 16,
+          color: DOCX_COLORS.muted,
+        }),
+      ],
+    }),
+  ]);
+}
+
 function docxFooter(text) {
   return new Footer({
     children: [
@@ -837,6 +895,9 @@ function buildLebenslaufDocx(cvData) {
         cvData.experience.map((job) => ({ label: job.dates, blocks: docxJobBlocks(job) })),
         { divider: true }
       ),
+
+      docxSectionHeading(cvData.labels.projects, DOCX_COLORS.accent),
+      ...docxProjects(cvData),
 
       docxSectionHeading("Ausbildung", DOCX_COLORS.accent),
       docxTable([
@@ -958,6 +1019,9 @@ function buildEuropassDocx(cvData) {
         { labelWidth: 1850, labelColor: DOCX_COLORS.europass, divider: true }
       ),
 
+      docxSectionHeading(cvData.labels.projects, DOCX_COLORS.europass),
+      ...docxProjects(cvData),
+
       docxSectionHeading("Education and training", DOCX_COLORS.europass),
       docxTable(
         [
@@ -1015,10 +1079,12 @@ function buildEuropassDocx(cvData) {
 
       docxSectionHeading("Additional information", DOCX_COLORS.europass),
       docxTable(
-        cvData.additional.map((item) => ({
-          label: "Note",
-          blocks: [{ text: item, size: 18, bullet: true }],
-        })),
+        cvData.additional
+          .filter((item) => !/^(Open to|Willing to relocate)/.test(item))
+          .map((item) => ({
+            label: "Note",
+            blocks: [{ text: item, size: 18, bullet: true }],
+          })),
         { labelWidth: 1650, labelColor: DOCX_COLORS.europass }
       ),
     ],

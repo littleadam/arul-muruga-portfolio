@@ -16,7 +16,7 @@ export default function Expertise() {
       <div className="container">
         <Reveal className="section-head expertise-head">
           <div>
-            <p className="eyebrow">05 — Expertise</p>
+            <p className="eyebrow">06 — Expertise</p>
             <h2 className="section-title">
               Depth where it <em>matters.</em>
             </h2>

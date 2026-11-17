@@ -63,7 +63,7 @@ export default function Contact() {
       <div className="container">
         <div className="contact-grid">
           <Reveal className="contact-copy">
-            <p className="eyebrow">08 — Contact</p>
+            <p className="eyebrow">09 — Contact</p>
             <h2 className="contact-title">
               Ready to drive <em>AI at scale</em> for your business.
             </h2>

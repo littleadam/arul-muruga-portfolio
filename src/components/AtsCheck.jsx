@@ -284,7 +284,7 @@ export default function AtsCheck() {
       <div className="container">
         <Reveal className="section-head ats-head">
           <div>
-            <p className="eyebrow">07 — ATS check</p>
+            <p className="eyebrow">08 — ATS check</p>
             <h2 className="section-title">
               Is this role a <em>match?</em>
             </h2>

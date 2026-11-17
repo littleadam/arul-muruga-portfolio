@@ -229,6 +229,46 @@ function buildDocument(cv) {
             ...job.bullets.map(bullet),
           ]),
 
+          ...(cv.projects?.length
+            ? [
+                sectionHeading(cv.labels.projects),
+                ...cv.projects.flatMap((project) => [
+                  new Paragraph({
+                    spacing: { before: 90, after: 10 },
+                    children: [
+                      new TextRun({
+                        text: project.name,
+                        bold: true,
+                        size: 20,
+                        color: COLORS.ink,
+                      }),
+                    ],
+                  }),
+                  new Paragraph({
+                    spacing: { after: 10 },
+                    children: [
+                      new TextRun({
+                        text: project.meta,
+                        size: 17,
+                        color: COLORS.muted,
+                      }),
+                    ],
+                  }),
+                  new Paragraph({
+                    spacing: { after: 60 },
+                    children: [
+                      new TextRun({
+                        text: project.tech,
+                        italics: true,
+                        size: 16,
+                        color: COLORS.muted,
+                      }),
+                    ],
+                  }),
+                ]),
+              ]
+            : []),
+
           sectionHeading(cv.labels.education),
           new Paragraph({
             tabStops: [{ type: TabStopType.RIGHT, position: CONTENT_WIDTH }],

@@ -7,7 +7,7 @@ export default function Project() {
     <section id="project" className="section project">
       <div className="container project-grid">
         <Reveal className="project-copy">
-          <p className="eyebrow">06 &mdash; Independent project</p>
+          <p className="eyebrow">07 &mdash; Independent project</p>
           <h2 className="section-title">
             Proof that I still <em>build.</em>
           </h2>

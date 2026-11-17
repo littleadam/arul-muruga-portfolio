@@ -89,6 +89,7 @@ export const navLinks = [
   { id: "profile", label: "Profile" },
   { id: "programme", label: "Program" },
   { id: "experience", label: "Experience" },
+  { id: "work", label: "Projects" },
   { id: "expertise", label: "Expertise" },
   { id: "ats", label: "ATS check" },
   { id: "contact", label: "Contact" },
@@ -193,6 +194,163 @@ export const earlierRoles = [
       "Engineered IoT-based solutions, including sensor drivers and interfaces, optimizing system performance and reliability.",
       "Improved PCB designs, enhancing energy efficiency and sensitivity for IoT applications.",
       "Conducted product demonstrations, showcasing technical capabilities to support business development.",
+    ],
+  },
+];
+
+export const deliveryProjects = [
+  {
+    company: "HCL Technologies · Cisco ODC",
+    era: "2010 – present",
+    note: "Delivery leadership, platform engineering and field support for Cisco and its end customers.",
+    projects: [
+      {
+        name: "Cisco Secured Linux",
+        role: "Team Lead",
+        team: "12 engineers",
+        customers: "Cisco Systems",
+        tech: ["Linux", "Runtime Defense (RTD)", "OSC", "SafeC", "Containerization", "Jenkins"],
+        summary:
+          "Secure runtime application protection for Cisco Linux-based platforms, with security checks moved into the delivery pipeline.",
+        contributions: [
+          "Implemented core modules for runtime application protection on Cisco's Linux-based platforms.",
+          "Joined customer debugging sessions to analyze how protected applications behaved at runtime and resolve integration issues.",
+          "Integrated security instrumentation with Jenkins CI/CD pipelines, enabling threat modeling before release rather than after deployment.",
+        ],
+      },
+      {
+        name: "Access control list over Cisco IOS",
+        role: "Team Lead",
+        team: "11 engineers",
+        customers: "RJIL · Google · Facebook",
+        tech: ["C", "Python", "Cisco IOS-XR", "YANG / NETCONF"],
+        summary:
+          "Layer 3 access control for service-provider and hyperscale data-center networks, backed by hands-on escalation support.",
+        contributions: [
+          "Designed and developed Layer 3 ACL modules supporting IPv4 and IPv6 filters for ingress and egress traffic.",
+          "Implemented protocol handlers and packet-match engines, integrating them with IOS-XR control-plane components through YANG/NETCONF.",
+          "Supported production escalations involving ACL misbehavior: analyzed packet traces, reproduced issues and delivered fast fixes.",
+          "Worked with Cisco TAC and product owners to triage and resolve field issues affecting data-center customers.",
+        ],
+      },
+      {
+        name: "QoS / Policy Manager over Cisco IOS",
+        role: "Team Lead",
+        team: "11 engineers",
+        customers: "RJIL · Google · Facebook",
+        tech: ["C", "Python", "Cisco IOS-XR", "YANG / NETCONF"],
+        summary:
+          "Quality-of-service policy handling for enterprise and service-provider routers, tuned for data-path performance and field reliability.",
+        contributions: [
+          "Developed QoS classification, policing and scheduling modules in the MQC framework for enterprise and service-provider routers.",
+          "Led performance optimization of data-path traffic handling through policy maps and queuing logic.",
+          "Diagnosed and fixed field defects across multiple geographies, keeping customer downtime to a minimum.",
+          "Collaborated with global Cisco teams on traffic-shaping strategy and regression automation.",
+        ],
+      },
+      {
+        name: "Ethernet Connectivity Fault Management",
+        role: "Team Lead",
+        team: "8 engineers",
+        customers: "Wells Fargo · NASA · Visa",
+        tech: ["C", "Python", "Cisco NX-OS", "AAA", "Ethernet", "ACME", "GDB"],
+        summary:
+          "Layer 2 operations, administration and maintenance for Cisco NX-OS, giving enterprise and metro Ethernet customers proactive fault detection.",
+        contributions: [
+          "Developed key components of the Ethernet CFM module for Cisco NX-OS, enabling Layer 2 OAM across enterprise and metro Ethernet networks.",
+          "Implemented maintenance end points (MEPs), maintenance entity groups (MEGs) and CFM message handling to monitor end-to-end Ethernet service health.",
+          "Led debugging and resolution of customer-reported issues in proactive fault detection and real-time fault isolation with Cisco TAC and field engineers.",
+          "Used GDB and custom trace utilities to analyze memory, packet flow and state transitions in complex failure scenarios.",
+          "Ran knowledge-sharing sessions and wrote documentation so internal teams could support the deployed features.",
+        ],
+      },
+      {
+        name: "Broadband Network Gateway",
+        role: "Senior Engineer",
+        team: null,
+        customers: "Cygate",
+        tech: ["C", "Python", "Cisco OS", "AAA", "ACME", "VPN", "L2TP", "GDB"],
+        summary:
+          "Subscriber session management and policy provisioning for a broadband network gateway, with live escalation support.",
+        contributions: [
+          "Implemented PPPoE, IPoE and L2TP protocol stacks as part of the BNG feature set.",
+          "Developed the session manager handling subscriber sessions and policy provisioning.",
+          "Handled escalations on session drops and authentication failures, driving root-cause analysis with support and test teams.",
+          "Added debug CLI commands and trace utilities for live issue replication.",
+        ],
+      },
+      {
+        name: "LTE Gateway Router",
+        role: "Senior Engineer",
+        team: null,
+        customers: "Cisco Systems · AT&T",
+        tech: ["C", "Cisco OS", "L2TP", "GRE", "ACME", "3GPP", "GDB"],
+        summary:
+          "Packet gateway data and control plane for mobile core networks, validated against high-throughput operator workloads.",
+        contributions: [
+          "Developed data- and control-plane components of the LTE packet gateway, including GRE and L2TP tunneling.",
+          "Implemented QoS and lawful intercept modules aligned with 3GPP standards.",
+          "Collaborated with system test teams to simulate high-throughput mobile core workloads.",
+          "Fixed customer-reported defects in packet loss and interface-statistics mismatches.",
+        ],
+      },
+      {
+        name: "GGSN Gateway Router",
+        role: "Software Engineer",
+        team: null,
+        customers: "Cisco · AT&T · Belgacom · Eircom · Turkcell · Truemove",
+        tech: ["C", "Cisco OS", "L2TP", "GRE", "ACME", "GDB"],
+        summary:
+          "Mobile gateway functionality for multiple operators, reworked to scale to large subscriber bases.",
+        contributions: [
+          "Implemented GGSN functionality including PDP context setup, billing integration and data-path optimization.",
+          "Reworked memory management code to handle scalability for a large subscriber base.",
+          "Resolved field issues involving GRE tunnel failures and L2TP session teardown.",
+          "Built tools and scripts for debugging session tables and control messages on live systems.",
+        ],
+      },
+    ],
+  },
+  {
+    company: "Digitech Systems and Engineering",
+    era: "2009 – 2010",
+    note: "Embedded software for remote utility metering.",
+    projects: [
+      {
+        name: "IP Modem for Metering",
+        role: "Software Engineer",
+        team: "Embedded systems",
+        customers: "NPDC Ltd. (Andhra Pradesh) · Thailand Electricity Board",
+        tech: ["C", "GPRS", "RTC", "EEPROM", "8-bit microprocessors"],
+        summary:
+          "Low-footprint remote metering over GPRS, delivered on 8-bit processors and proven in utility field trials.",
+        contributions: [
+          "Developed low-footprint embedded software supporting remote metering via GPRS on 8-bit processors.",
+          "Handled circuit-level debugging and firmware interface logic for EEPROM and RTC modules.",
+          "Supported pilot rollout and live debugging in field trials with electric-utility vendors.",
+        ],
+      },
+    ],
+  },
+  {
+    company: "Iwiz Hitec Solutions",
+    era: "2008 – 2009",
+    note: "Earlier IoT and embedded hardware work.",
+    projects: [
+      {
+        name: "IoT sensor interfaces and PCB design",
+        role: "C Programmer",
+        team: "Embedded systems",
+        customers: "Product engineering",
+        tech: ["C", "Sensor drivers", "PCB design"],
+        summary:
+          "Sensor interfaces and board-level improvements for IoT products, supported by hands-on demonstrations.",
+        contributions: [
+          "Engineered IoT solutions including sensor drivers and interfaces, optimizing system performance and reliability.",
+          "Improved PCB designs to increase energy efficiency and sensitivity for IoT applications.",
+          "Conducted product demonstrations to showcase technical capabilities and support business development.",
+        ],
+      },
     ],
   },
 ];
