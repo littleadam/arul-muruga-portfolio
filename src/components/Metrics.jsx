@@ -11,8 +11,9 @@ export default function Metrics() {
             <h2 className="section-title">The return, in numbers.</h2>
           </div>
           <p className="section-lede">
-            Year 1 outcomes from the AI transformation program. Measured, not
-            estimated &mdash; and reported back to the organization.
+            Measured outcomes across AI transformation, platform delivery and
+            customer partnerships &mdash; reported back to the organization,
+            not estimated.
           </p>
         </Reveal>
 

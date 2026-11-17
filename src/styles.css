@@ -833,7 +833,7 @@ button {
 
 .metrics-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   border-bottom: 1px solid var(--rule);
 }
 
@@ -864,7 +864,17 @@ button {
   --tint: #faf1ee;
 }
 
-.metric:first-child {
+.metric:nth-child(5) {
+  --accent: var(--teal);
+  --tint: #eff6f3;
+}
+
+.metric:nth-child(6) {
+  --accent: var(--ochre);
+  --tint: #fbf4e6;
+}
+
+.metric:nth-child(3n+1) {
   border-left: 0;
   padding-left: 0;
 }
@@ -3440,6 +3450,16 @@ button {
     border-bottom: 1px solid var(--rule);
   }
 
+  .metric:nth-child(3n+1) {
+    border-left: 1px solid var(--rule-soft);
+    padding-left: 1.25rem;
+  }
+
+  .metric:nth-child(2n+1) {
+    border-left: 0;
+    padding-left: 0;
+  }
+
   .metric:first-child,
   .metric:nth-child(3) {
     border-left: 0;
@@ -3447,7 +3467,8 @@ button {
   }
 
   .metric:nth-child(2),
-  .metric:nth-child(4) {
+  .metric:nth-child(4),
+  .metric:nth-child(6) {
     padding-right: 0;
   }
 

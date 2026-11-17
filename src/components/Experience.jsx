@@ -10,12 +10,11 @@ import {
 import Reveal from "./Reveal";
 
 const responsibilities = [
-  "Lead an AI transformation program across the Cisco ODC, driving adoption of AI tooling across engineering teams.",
-  "Manage and mentor a leadership bench of 7 Technical Leads and 15+ engineers directly, within a wider organization of 65 engineers across 8 teams.",
-  "Act as the client-facing delivery interface in the client ODC — aligning priorities with Cisco stakeholders and working directly with Cisco's end customers to debug and resolve issues on the client's behalf.",
-  "Own technical architecture and delivery governance, applying the Linux, networking, C/C++, Python, Jenkins, Docker and multi-architecture build expertise built over 18 years.",
-  "Work on AI governance alignment, including the EU AI Act and ISO/IEC 42001.",
-  "Head resource demand management for the delivery unit — gathering open positions from teams, coordinating candidate sourcing with HR, selecting interview panelists, collecting panel reviews and updating HR teams.",
+  "Lead an AI transformation program across the Cisco ODC, using DevOps automation in Jenkins CI/CD pipelines, regression suites and AI tooling to return 664+ FTE-hours and cut build time by 93%.",
+  "Manage a 65-engineer, 8-team organization through 7 Technical Leads and 15+ direct reports, with stakeholder management and client-facing escalation ownership for Cisco and its end customers.",
+  "Turn delivery performance into business development: doubled client billing within a year of taking over Cisco Secured Linux, backed by 7/7 customer satisfaction.",
+  "Use delivery analytics and process improvement to run monthly PCA audits, corrective action and SLA governance across on-site, remote and 24x7 support teams.",
+  "Head resource demand management and AI governance under the EU AI Act and ISO/IEC 42001, from open positions and hiring panels to responsible adoption.",
 ];
 
 export default function Experience() {

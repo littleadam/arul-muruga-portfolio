@@ -104,6 +104,18 @@ export const navLinks = [
 
 export const metrics = [
   {
+    value: 2,
+    suffix: "×",
+    label: "Client billing growth",
+    note: "Doubled on Cisco Secured Linux within a year of taking over the engagement.",
+  },
+  {
+    value: 7,
+    suffix: "/7",
+    label: "Customer satisfaction",
+    note: "Four years on Cisco Secured Linux; 7/7 every quarter for a year on 24x7 support.",
+  },
+  {
     value: 664,
     suffix: "+",
     label: "FTE-hours returned",
@@ -223,6 +235,7 @@ export const deliveryProjects = [
           "Implemented core modules for runtime application protection on Cisco's Linux-based platforms.",
           "Joined customer debugging sessions to analyze how protected applications behaved at runtime and resolve integration issues.",
           "Integrated security instrumentation with Jenkins CI/CD pipelines, enabling threat modeling before release rather than after deployment.",
+          "Took over the engagement and doubled client billing within a year, backed by a 7/7 customer satisfaction score sustained for four years.",
         ],
       },
       {

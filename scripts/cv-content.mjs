@@ -27,9 +27,11 @@ export const cv = {
     ["linkedin.com/in/aruldswamy", "github.com/littleadam", "littleadam.github.io/arul-muruga-portfolio"],
   ],
   summary:
-    "PMP-certified Technical Project Manager and Group Technical Architect with 18 years in enterprise engineering delivery, including 15+ years with HCL Technologies on the Cisco Offshore Development Center. Leads a 65-engineer, 8-team delivery organization with 7 Technical Leads and 15+ direct reports, owning technical program management, delivery governance, resource demand planning and client-facing escalation management for Cisco and its end customers. Drove an AI transformation program that saved 664+ FTE-hours and cut build time by 93%, scaling from 2 to 6 AI tools with governance aligned to the EU AI Act and ISO/IEC 42001. Deep technical foundation in Linux, TCP/IP, C/C++, Python, Jenkins and Docker; PMP, Google Cloud Generative AI Leader and AWS Certified AI Practitioner.",
+    "PMP-certified Technical Project Manager and Group Technical Architect with 18 years in engineering delivery. Leads a 65-engineer, 8-team Cisco ODC with 7 Technical Leads and 15+ direct reports, owning technical program management, delivery governance, stakeholder management and DevOps automation. Drove AI transformation saving 664+ FTE-hours and 93% build time under EU AI Act / ISO 42001 governance. Uses analytics, corrective action and process improvement to strengthen delivery and grow accounts.",
   achievements: [
     "Lead a 65-engineer, 8-team delivery organization with 7 Technical Leads and 15+ direct reports.",
+    "Doubled client billing on the Cisco Secured Linux engagement within one year of taking over the project.",
+    "Sustained 7/7 customer satisfaction for four years on Cisco Secured Linux; repeated 7/7 every quarter for a year on a 24x7 support engagement.",
     "664+ FTE-hours saved through the AI transformation program in Year 1.",
     "93% build-time reduction delivered for the wider engineering organization.",
     "2 AI tools deployed in Year 1 and 6 in Year 2, against a 12-tool target for Year 3.",
@@ -44,13 +46,11 @@ export const cv = {
       intro:
         "Career progression: Member Technical Staff > Lead Engineer > Technical Lead > Senior Technical Lead > Technical Project Manager.",
       bullets: [
-        "Lead an AI transformation program across the Cisco ODC, driving adoption of AI tooling across engineering teams.",
-        "Manage and mentor a leadership bench of 7 Technical Leads and 15+ engineers directly, within a wider organization of 65 engineers across 8 teams.",
-        "Serve as the client-facing delivery interface in the Cisco ODC: lead stakeholder management with Cisco, align priorities and work directly with Cisco's end customers to debug and resolve issues on the client's behalf.",
-        "Own technical architecture and delivery governance, applying Linux, networking, C/C++, Python, Jenkins, Docker and multi-architecture build expertise built over 18 years.",
-        "Head resource demand management for the delivery unit: gather open positions from teams, coordinate candidate sourcing with HR, select interview panelists, collect panel reviews and update HR teams.",
-        "Align AI adoption with the EU AI Act and ISO/IEC 42001, treating governance, risk and compliance as design inputs rather than retrofitted documentation.",
-        "Handle on-site, remote and 24x7 support teams, monthly process compliance audits (PCA) and SoW renewals, backed by 18 years of interviewing and training engineers.",
+        "Lead an AI transformation program across the Cisco ODC with DevOps automation in Jenkins CI/CD pipelines, regression suites and AI tooling, saving 664+ FTE-hours and 93% build time.",
+        "Manage a 65-engineer, 8-team organization through 7 Technical Leads and 15+ direct reports, owning stakeholder management and client-facing escalation support for Cisco and its end customers.",
+        "Turn delivery performance into business development: doubled client billing within a year of taking over Cisco Secured Linux, backed by 7/7 customer satisfaction.",
+        "Use delivery analytics and process improvement to run monthly PCA audits, corrective action and SLA governance across on-site, remote and 24x7 support teams.",
+        "Head resource demand management and AI governance under the EU AI Act and ISO/IEC 42001, from open positions and hiring panels to responsible adoption.",
       ],
     },
     {
@@ -61,6 +61,7 @@ export const cv = {
       bullets: [
         "Developed software solutions for energy meters, integrating internet-based data handling to enhance efficiency and reduce costs.",
         "Designed and deployed an HTTP server for embedded systems, streamlining data transmission processes.",
+        "Documented technical solutions and shared knowledge across the team.",
       ],
     },
     {
@@ -71,6 +72,7 @@ export const cv = {
       bullets: [
         "Engineered IoT-based solutions, including sensor drivers and interfaces, optimizing system performance and reliability.",
         "Improved PCB designs, enhancing energy efficiency and sensitivity for IoT applications.",
+        "Conducted product demonstrations to showcase capabilities and support business development.",
       ],
     },
   ],
@@ -153,9 +155,11 @@ export const cvDe = {
     ["linkedin.com/in/aruldswamy", "github.com/littleadam", "littleadam.github.io/arul-muruga-portfolio"],
   ],
   summary:
-    "PMP-zertifizierter Technischer Projektmanager und Gruppen-Technikarchitekt mit 18 Jahren Erfahrung in der Enterprise-Engineering-Delivery, davon 15+ Jahre bei HCL Technologies im Cisco Offshore Development Center. Leitet eine Delivery-Organisation mit 65 Ingenieuren in 8 Teams mit 7 Technical Leads und 15+ Direktberichten; verantwortlich für technisches Programmmanagement, Delivery-Governance, Ressourcenbedarfsplanung und kundenseitiges Eskalationsmanagement für Cisco und dessen Endkunden. Steuerte ein KI-Transformationsprogramm mit 664+ eingesparten FTE-Stunden und 93 % kürzeren Build-Zeiten sowie einer Skalierung von 2 auf 6 KI-Tools, mit Governance nach EU AI Act und ISO/IEC 42001. Fundierte technische Basis in Linux, TCP/IP, C/C++, Python, Jenkins und Docker; PMP, Google Cloud Generative AI Leader und AWS Certified AI Practitioner.",
+    "PMP-zertifizierter Technischer Projektmanager und Gruppen-Technikarchitekt mit 18 Jahren Engineering-Delivery. Leitet ein 65-Ingenieur-/8-Team-Cisco-ODC mit 7 Technical Leads und 15+ Direktberichten; verantwortlich für technisches Programmmanagement, Delivery-Governance, Stakeholder-Management und DevOps-Automatisierung. Steuerte KI-Transformation mit 664+ FTE-Stunden und 93 % weniger Build-Zeit nach EU AI Act / ISO 42001. Datenanalyse, Korrekturmaßnahmen und Prozessverbesserung stärken die Delivery und bauen Kundenkonten aus.",
   achievements: [
     "Leitung einer Delivery-Organisation mit 65 Ingenieuren in 8 Teams, 7 Technical Leads und 15+ Direktberichten.",
+    "Verdopplung der Kundenabrechnung im Cisco-Secured-Linux-Projekt innerhalb eines Jahres nach Übernahme der Projektleitung.",
+    "7/7 Kundenzufriedenheit über vier Jahre bei Cisco Secured Linux; 7/7 jedes Quartal seit einem Jahr in einem 24x7-Supportprojekt.",
     "664+ FTE-Stunden durch das KI-Transformationsprogramm im ersten Jahr eingespart.",
     "93 % kürzere Build-Zeiten für die gesamte Engineering-Organisation.",
     "2 KI-Tools im ersten Jahr und 6 im zweiten Jahr produktiv eingeführt, bei einem Ziel von 12 Tools für Jahr 3.",
@@ -170,12 +174,11 @@ export const cvDe = {
       intro:
         "Karriereverlauf: Member Technical Staff > Lead Engineer > Technical Lead > Senior Technical Lead > Technical Project Manager.",
       bullets: [
-        "Leitung eines KI-Transformationsprogramms im Cisco ODC und Förderung der Einführung von KI-Tools in den Engineering-Teams.",
-        "Führung und Mentoring eines Führungskräfte-Pools aus 7 Technical Leads und 15+ Ingenieuren direkt, innerhalb einer Organisation von 65 Ingenieuren in 8 Teams; zusätzlich kundenseitige Delivery-Schnittstelle zu Cisco und dessen Endkunden inklusive Stakeholder-Management und Eskalationssteuerung.",
-        "Verantwortung für technische Architektur und Delivery-Governance auf Basis von Linux, Netzwerktechnik, C/C++, Python, Jenkins, Docker und Multi-Architektur-Builds aus 18 Jahren Praxis.",
-        "Leitung des Ressourcenbedarfsmanagements für die Delivery-Unit: Erfassung offener Stellen aus den Teams, Koordination der Kandidatensuche mit HR, Auswahl von Interview-Panels, Sammlung der Panel-Bewertungen und Aktualisierung der HR-Teams.",
-        "Ausrichtung der KI-Einführung an EU AI Act und ISO/IEC 42001 - Governance, Risiko und Compliance als Designvorgabe statt nachträglicher Dokumentation.",
-        "Verantwortung für Onsite-, Remote- und 24x7-Support-Teams, monatliche Process-Compliance-Audits (PCA) und SoW-Verlängerungen, gestützt auf 18 Jahre Erfahrung in Bewerbungsgesprächen und Ingenieurausbildung.",
+        "Leitung eines KI-Transformationsprogramms im Cisco ODC mit DevOps-Automatisierung in Jenkins-CI/CD, Regressionstests und KI-Tools; 664+ FTE-Stunden und 93 % weniger Build-Zeit.",
+        "Führung einer Organisation mit 65 Ingenieuren in 8 Teams über 7 Technical Leads und 15+ Direktberichte; Stakeholder-Management und Eskalationssteuerung für Cisco und dessen Endkunden.",
+        "Umwandlung von Delivery-Leistung in Geschäftsentwicklung: Verdopplung der Kundenabrechnung innerhalb eines Jahres nach Übernahme von Cisco Secured Linux, gestützt auf 7/7 Kundenzufriedenheit.",
+        "Nutzung von Datenanalyse und Prozessverbesserung für monatliche PCA-Audits, Korrekturmaßnahmen und SLA-Governance in Onsite-, Remote- und 24x7-Teams.",
+        "Leitung des Ressourcenbedarfsmanagements und der KI-Governance nach EU AI Act und ISO/IEC 42001 - von offenen Stellen über Interview-Panels bis zur verantwortungsvollen Adoption.",
       ],
     },
     {
@@ -185,6 +188,7 @@ export const cvDe = {
       dates: "Aug 2009 - Juni 2010",
       bullets: [
         "Entwicklung von Softwarelösungen für Energiezähler mit internetbasierter Datenverarbeitung sowie Konzeption eines HTTP-Servers für eingebettete Systeme.",
+        "Dokumentation technischer Lösungen und Wissensaustausch im Team.",
       ],
     },
     {
@@ -194,6 +198,7 @@ export const cvDe = {
       dates: "Juli 2008 - Juli 2009",
       bullets: [
         "Entwicklung IoT-basierter Lösungen mit Sensortreibern und Schnittstellen sowie Verbesserung von PCB-Designs für Energieeffizienz und Empfindlichkeit.",
+        "Durchführung von Produktdemonstrationen zur Unterstützung der Geschäftsentwicklung.",
       ],
     },
   ],
@@ -278,9 +283,11 @@ export const cvFr = {
     ["linkedin.com/in/aruldswamy", "github.com/littleadam", "littleadam.github.io/arul-muruga-portfolio"],
   ],
   summary:
-    "Chef de projet technique certifié PMP et architecte technique de groupe, fort de 18 ans d'expérience en delivery d'ingénierie, dont 15+ années chez HCL Technologies au sein du Cisco Offshore Development Center. Dirige une organisation de delivery de 65 ingénieurs répartis en 8 équipes via 7 Technical Leads et 15+ collaborateurs en direct ; responsable de la gestion de programme technique, de la gouvernance de la livraison, de la planification des ressources et du management des escalations côté client pour Cisco et ses clients finaux. A piloté un programme de transformation IA ayant généré 664+ heures ETP économisées et une réduction de 93 % des temps de build, avec une montée en charge de 2 à 6 outils d'IA et une gouvernance alignée sur l'EU AI Act et l'ISO/IEC 42001. Solide base technique : Linux, TCP/IP, C/C++, Python, Jenkins et Docker ; certifié PMP, Google Cloud Generative AI Leader et AWS Certified AI Practitioner.",
+    "Chef de projet technique certifié PMP et architecte technique, 18 ans. Dirige un Cisco ODC de 65 ingénieurs, 8 équipes, 7 Technical Leads et 15+ directs ; pilote programme, gouvernance, management des parties prenantes et automatisation DevOps. Transformation IA : 664+ heures ETP économisées, 93 % de build-time en moins, sous EU AI Act / ISO 42001. Analyse de données, actions correctives et amélioration continue : delivery et développement commercial.",
   achievements: [
     "Direction d'une organisation de delivery de 65 ingénieurs en 8 équipes, avec 7 Technical Leads et 15+ collaborateurs en direct.",
+    "Doublement de la facturation client sur Cisco Secured Linux en un an après la reprise du projet.",
+    "7/7 de satisfaction client pendant quatre ans sur Cisco Secured Linux ; 7/7 chaque trimestre depuis un an sur un projet de support 24x7.",
     "664+ heures ETP économisées grâce au programme de transformation IA dès la première année.",
     "Réduction de 93 % des temps de build pour l'ensemble de l'organisation d'ingénierie.",
     "2 outils d'IA déployés en première année et 6 en deuxième année, pour un objectif de 12 outils en année 3.",
@@ -295,13 +302,11 @@ export const cvFr = {
       intro:
         "Parcours : Member Technical Staff > Lead Engineer > Technical Lead > Senior Technical Lead > Technical Project Manager.",
       bullets: [
-        "Diriger un programme de transformation IA au sein du Cisco ODC et favoriser l'adoption des outils d'IA par les équipes d'ingénierie.",
-        "Manager et accompagner un vivier de direction composé de 7 Technical Leads et de 15+ ingénieurs en direct, au sein d'une organisation de 65 ingénieurs répartis en 8 équipes.",
-        "Servir d'interface de livraison côté client au sein du Cisco ODC : piloter le management des parties prenantes de Cisco, aligner les priorités et travailler directement avec les clients finaux de Cisco pour déboguer et résoudre les incidents pour le compte du client.",
-        "Piloter l'architecture technique et la gouvernance de la livraison en mobilisant Linux, les réseaux, le C/C++, Python, Jenkins, Docker et les builds multi-architectures acquis en 18 ans.",
-        "Diriger la gestion de la demande de ressources pour l'unité de livraison : recueil des postes ouverts auprès des équipes, coordination du sourcing avec les RH, sélection des jurys d'entretien, collecte des évaluations et mise à jour des équipes RH.",
-        "Aligner l'adoption de l'IA sur l'EU AI Act et l'ISO/IEC 42001, en traitant la gouvernance, les risques et la conformité comme des contraintes de conception plutôt qu'une documentation ajoutée après coup.",
-        "Superviser les équipes de support sur site, à distance et 24x7, les audits mensuels de conformité des processus (PCA) et les renouvellements de SoW, avec 18 ans d'expérience en conduite d'entretiens et formation d'ingénieurs.",
+        "Pilotage d'un programme de transformation IA au Cisco ODC avec automatisation DevOps dans Jenkins CI/CD, les tests de régression et les outils d'IA : 664+ heures ETP et 93 % de build-time économisés.",
+        "Direction d'une organisation de 65 ingénieurs en 8 équipes via 7 Technical Leads et 15+ collaborateurs directs ; management des parties prenantes et escalations pour Cisco et ses clients finaux.",
+        "Conversion de la performance de livraison en développement commercial : doublement de la facturation client en un an après la reprise de Cisco Secured Linux, soutenu par un score de satisfaction de 7/7.",
+        "Usage de l'analyse de données et de l'amélioration continue pour les audits PCA mensuels, les actions correctives et la gouvernance SLA des équipes sur site, distantes et 24x7.",
+        "Gestion de la demande de ressources et gouvernance IA sous EU AI Act / ISO 42001, des postes ouverts aux jurys d'entretien jusqu'à une adoption responsable.",
       ],
     },
     {
@@ -312,6 +317,7 @@ export const cvFr = {
       bullets: [
         "Développement de solutions logicielles pour compteurs d'énergie, avec intégration du traitement de données par internet pour améliorer l'efficacité et réduire les coûts.",
         "Conception et déploiement d'un serveur HTTP pour systèmes embarqués, simplifiant les processus de transmission de données.",
+        "Documentation des solutions techniques et partage des connaissances au sein de l'équipe.",
       ],
     },
     {
@@ -322,6 +328,7 @@ export const cvFr = {
       bullets: [
         "Développement de solutions basées sur l'IoT, notamment des pilotes de capteurs et des interfaces, optimisant les performances et la fiabilité du système.",
         "Amélioration des conceptions de PCB, renforçant l'efficacité énergétique et la sensibilité des applications IoT.",
+        "Réalisation de démonstrations produit pour soutenir le développement commercial.",
       ],
     },
   ],
