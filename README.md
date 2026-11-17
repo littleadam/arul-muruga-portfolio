@@ -1,8 +1,8 @@
 # Arul Muruga — Executive Profile
 
 A single-page executive profile built with React and Vite. It is written and
-designed for senior engineering leaders and programme managers: outcomes first, then
-programme detail, career arc, technical depth and contact.
+designed for senior engineering leaders and program managers: outcomes first, then
+program detail, career arc, technical depth and contact.
 
 ## Run locally
 
@@ -27,7 +27,7 @@ contents of `dist/` can be hosted at a domain root or in a subdirectory.
 
 All copy and links live in one place:
 
-- `src/data.js` — impact metrics, programme phases, career arc, expertise,
+- `src/data.js` — impact metrics, program phases, career arc, expertise,
   operating principles, project details, LinkedIn/GitHub links and CV URLs.
 - `src/components/` — one component per section.
 - `src/components/AtsCheck.jsx` — the ATS check UI (paste or upload a job
@@ -38,15 +38,15 @@ All copy and links live in one place:
 - `src/styles.css` — design tokens, typography, layout and responsive rules.
 
 The visual system is deliberately formal: warm paper background, hairline
-rules, Source Serif 4 for headings and Inter for body copy. Colour comes from
+rules, Source Serif 4 for headings and Inter for body copy. Color comes from
 a fixed four-hue accent palette — navy, teal, ochre and rust — assigned by
 section and used only on rules, numerals, labels and small surfaces. There are
 no decorative gradients, glows or illustrations.
 
 Assets:
 
-- `public/Arul_Muruga_EU_CV.pdf` — the primary, English EU-format CV served by
-  every “Download CV” link.
+- `public/Arul_Muruga_EU_CV.pdf` — the primary, English EU-format CV downloaded
+  by the English option in the “Download EU CV” menu.
 - `public/Arul_Muruga_EU_CV.docx` — the editable English Word version.
 - `public/Arul_Muruga_Lebenslauf_DE.pdf` / `.docx` — German tabular
   Lebenslauf (traditional German format).
@@ -59,9 +59,11 @@ Assets:
   `https://littleadam.github.io/arul-muruga-portfolio/og-cover.png`.
 - `public/favicon.svg` — monogram favicon.
 
-The “Download CV” button opens a format chooser with four formats — EU CV
-(English), Lebenslauf (German), CV Français and Europass — each available as
-PDF and DOCX. The Contact section lists the same four formats inline.
+The “Download EU CV” button in the navigation opens a three-language menu —
+English, German and French — and downloads the matching CV as PDF or DOCX.
+The hero “Download CV” button opens a format chooser with four formats — EU CV
+(English), Lebenslauf (German), CV Français and Europass. The Contact section
+lists all four formats inline.
 
 Regenerate every CV file after editing `scripts/cv-content.mjs`:
 

@@ -1,4 +1,4 @@
-import { Boxes, Compass, Scale, Terminal } from "lucide-react";
+import { Boxes, Compass, Handshake, Scale, Terminal } from "lucide-react";
 import { expertise, principles, workingKnowledge } from "../data";
 import Reveal from "./Reveal";
 
@@ -6,6 +6,7 @@ const icons = {
   terminal: Terminal,
   boxes: Boxes,
   compass: Compass,
+  handshake: Handshake,
   scale: Scale,
 };
 
@@ -21,9 +22,10 @@ export default function Expertise() {
             </h2>
           </div>
           <p className="section-lede">
-            Four capabilities that compound: the engineering foundation, the
-            delivery machinery, the leadership bench and the governance to take
-            AI into production with confidence.
+            Five capabilities that compound: the engineering foundation, the
+            delivery machinery, the leadership bench, direct client and
+            end-customer management, and the governance to take AI into
+            production with confidence.
           </p>
         </Reveal>
 

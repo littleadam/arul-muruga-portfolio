@@ -1,6 +1,5 @@
 import { useMemo, useRef, useState } from "react";
 import {
-  ArrowDownToLine,
   CircleAlert,
   CircleCheck,
   FileText,
@@ -11,7 +10,7 @@ import {
   X,
 } from "lucide-react";
 import { analyzeJob } from "../ats";
-import { CV_URL } from "../data";
+import CvDownload from "./CvDownload";
 import Reveal from "./Reveal";
 
 async function extractFileText(file) {
@@ -81,11 +80,13 @@ function AtsResult({ result }) {
         <h3>{result.label}</h3>
         <p>{result.summary}</p>
         <div className="ats-score-meta">
-          <span>{result.wordCount} words analysed</span>
-          <a href={CV_URL} download className="text-link">
-            Download EU CV
-            <ArrowDownToLine size={14} strokeWidth={1.8} aria-hidden="true" />
-          </a>
+          <span>{result.wordCount} words analyzed</span>
+          <CvDownload
+            label="Download EU CV"
+            mode="locales"
+            align="right"
+            triggerClassName="text-link"
+          />
         </div>
       </aside>
 
@@ -186,7 +187,7 @@ function AtsResult({ result }) {
         <p className="ats-disclaimer">
           This is a heuristic requirements check, not an employer&rsquo;s
           proprietary ATS. It compares the job text with the published profile
-          and EU-format CV. The job description is analysed in your browser and
+          and EU-format CV. The job description is analyzed in your browser and
           is never uploaded or stored.
         </p>
       </div>
@@ -262,7 +263,7 @@ export default function AtsCheck() {
         setResult(analyzeJob(jobText));
       } catch {
         setError(
-          "The job description could not be analysed. Try pasting the text instead of uploading the file."
+          "The job description could not be analyzed. Try pasting the text instead of uploading the file."
         );
       } finally {
         setIsAnalysing(false);
@@ -366,12 +367,12 @@ export default function AtsCheck() {
                 {isAnalysing ? (
                   <>
                     <Loader2 size={16} className="ats-spin" aria-hidden="true" />
-                    Analysing
+                    Analyzing
                   </>
                 ) : (
                   <>
                     <ScanSearch size={16} strokeWidth={1.9} aria-hidden="true" />
-                    Analyse match
+                    Analyze match
                   </>
                 )}
               </button>
@@ -409,7 +410,7 @@ export default function AtsCheck() {
               <li>
                 <span>02</span>
                 <strong>Leadership &amp; delivery</strong>
-                <p>Programme management, architecture, governance, people and hiring.</p>
+                <p>Program management, client and end-customer management, architecture, governance, people and hiring.</p>
               </li>
               <li>
                 <span>03</span>

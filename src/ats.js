@@ -262,7 +262,7 @@ const BUSINESS_SKILLS = [
     weight: 2,
   },
   {
-    label: "BI and visualisation",
+    label: "BI and visualization",
     aliases: [
       "tableau",
       "power bi",
@@ -337,7 +337,7 @@ const BUSINESS_SKILLS = [
 
 const LEADERSHIP = [
   {
-    label: "Technical programme management",
+    label: "Technical program management",
     aliases: [
       "technical programme management",
       "technical program management",
@@ -348,6 +348,7 @@ const LEADERSHIP = [
       "programme manager",
       "program manager",
       "programme director",
+      "program director",
     ],
     weight: 4,
   },
@@ -373,6 +374,27 @@ const LEADERSHIP = [
       "stakeholder engagement",
       "senior stakeholders",
       "executive stakeholders",
+    ],
+    weight: 3,
+  },
+  {
+    label: "Client and end-customer management",
+    aliases: [
+      "client management",
+      "client-facing",
+      "client facing",
+      "client relationship",
+      "client relationships",
+      "end customer",
+      "end-customer",
+      "end customer management",
+      "customer-facing",
+      "customer facing",
+      "account management",
+      "escalation management",
+      "issue resolution",
+      "resolving issues",
+      "joint debugging",
     ],
     weight: 3,
   },
@@ -541,7 +563,7 @@ const DOMAINS = [
   },
   {
     key: "engineering",
-    label: "Engineering organisations",
+    label: "Engineering organizations",
     aliases: ["engineering organisation", "engineering organization", "engineering teams"],
   },
 ];
@@ -589,6 +611,7 @@ const candidateCorpus = normalize(
     workingKnowledge.note,
     "c c++ tcp/ip ci/cd aws cloud pmp ai genai telecom telecommunications cisco offshore enterprise automation metrics",
     "bachelor of engineering b.e. hiring recruitment interview panels interviewing candidate selection resource planning workforce planning training compliance",
+    "client management client relationship management client-facing end customer end-customer escalation issue resolution stakeholder engagement odc",
     "english c1 tamil native german a1",
   ].join(" ")
 );
@@ -653,7 +676,7 @@ function detectSeniority(jobText) {
     [6, /\b(director|head of|group head|head of engineering)\b/],
     [
       5,
-      /\b(senior manager|programme manager|program manager|project manager|engineering manager|delivery manager|technical lead|lead engineer|architect)\b/,
+      /\b(senior manager|programme manager|program manager|project manager|engineering manager|delivery manager|client manager|technical lead|lead engineer|architect)\b/,
     ],
     [4, /\b(senior|lead)\b/],
     [3, /\b(mid-level|mid level|engineer|specialist)\b/],

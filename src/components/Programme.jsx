@@ -8,14 +8,14 @@ export default function Programme() {
       <div className="container">
         <Reveal className="programme-head">
           <div>
-            <p className="eyebrow">03 — Flagship programme</p>
+            <p className="eyebrow">03 — Flagship program</p>
             <h2 className="section-title">
-              AI transformation, run like a programme
+              AI transformation, run like a program
               <em> — not a pilot.</em>
             </h2>
           </div>
           <p className="section-lede">
-            Across the Cisco ODC, I lead a programme that turns AI tooling into
+            Across the Cisco ODC, I lead a program that turns AI tooling into
             everyday engineering practice: assessed against governance,
             instrumented for savings, and scaled across eight teams.
           </p>
@@ -42,9 +42,9 @@ export default function Programme() {
           </div>
 
           <Reveal className="scorecard-wrap" delay={150}>
-            <aside className="scorecard" aria-label="Programme scorecard">
+            <aside className="scorecard" aria-label="Program scorecard">
               <div className="scorecard-top">
-                <span className="micro">Programme scorecard</span>
+                <span className="micro">Program scorecard</span>
                 <span className="scorecard-year">Year 1 → 3</span>
               </div>
 

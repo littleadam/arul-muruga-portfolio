@@ -10,8 +10,9 @@ import {
 import Reveal from "./Reveal";
 
 const responsibilities = [
-  "Lead an AI transformation programme across the Cisco ODC, driving adoption of AI tooling across engineering teams.",
-  "Manage and mentor a leadership bench of 7 Technical Leads and 15+ engineers directly, within a wider organisation of 65 engineers across 8 teams.",
+  "Lead an AI transformation program across the Cisco ODC, driving adoption of AI tooling across engineering teams.",
+  "Manage and mentor a leadership bench of 7 Technical Leads and 15+ engineers directly, within a wider organization of 65 engineers across 8 teams.",
+  "Act as the client-facing delivery interface in the client ODC — aligning priorities with Cisco stakeholders and working directly with Cisco's end customers to debug and resolve issues on the client's behalf.",
   "Own technical architecture and delivery governance, applying the Linux, networking, C/C++, Python, Jenkins, Docker and multi-architecture build expertise built over 18 years.",
   "Work on AI governance alignment, including the EU AI Act and ISO/IEC 42001.",
   "Head resource demand management for the delivery unit — gathering open positions from teams, coordinating candidate sourcing with HR, selecting interview panelists, collecting panel reviews and updating HR teams.",
@@ -39,7 +40,7 @@ export default function Experience() {
                 </span>
                 <div className="org-name">
                   <strong>HCL Technologies</strong>
-                  <span>Cisco Offshore Development Centre</span>
+                  <span>Cisco Offshore Development Center</span>
                 </div>
                 <span className="role-status">Current</span>
               </div>
@@ -80,6 +81,7 @@ export default function Experience() {
                 <span>8 teams</span>
                 <span>7 technical leads</span>
                 <span>15+ direct reports</span>
+                <span>Client &amp; end-customer interface</span>
                 <span>Resource demand</span>
               </div>
             </article>
@@ -104,7 +106,7 @@ export default function Experience() {
               </ol>
               <p className="arc-note">
                 A progression from hands-on systems engineering to group-level
-                architecture and programme leadership — each layer still
+                architecture and program leadership — each layer still
                 informing the next.
               </p>
             </div>

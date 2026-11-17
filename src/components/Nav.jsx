@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import { ArrowDownToLine, Menu, X } from "lucide-react";
-import { CV_URL, navLinks, profile } from "../data";
+import { Menu, X } from "lucide-react";
+import { navLinks, profile } from "../data";
+import CvDownload from "./CvDownload";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -86,10 +87,12 @@ export default function Nav() {
         </nav>
 
         <div className="nav-actions">
-          <a className="nav-cv" href={CV_URL} download title="EU-format CV (PDF)">
-            <span>Download EU CV</span>
-            <ArrowDownToLine size={14} strokeWidth={1.8} />
-          </a>
+          <CvDownload
+            label="Download EU CV"
+            mode="locales"
+            align="right"
+            triggerClassName="nav-cv"
+          />
           <button
             ref={toggleRef}
             type="button"
@@ -121,15 +124,14 @@ export default function Nav() {
             </a>
           ))}
         </nav>
-        <a
-          className="btn btn-primary mobile-cv"
-          href={CV_URL}
-          download
-          title="EU-format CV (PDF)"
-          onClick={() => setOpen(false)}
-        >
-          Download EU CV <ArrowDownToLine size={16} />
-        </a>
+        <div className="mobile-cv">
+          <CvDownload
+            label="Download EU CV"
+            variant="primary"
+            mode="locales"
+            align="left"
+          />
+        </div>
         <p className="mobile-meta">
           Chennai, India
           <span aria-hidden="true">·</span>

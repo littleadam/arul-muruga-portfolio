@@ -7,6 +7,7 @@ const atAGlance = [
   ["At HCL", "Since 2010"],
   ["Scope", "65 engineers · 8 teams"],
   ["Leadership", "7 Technical Leads · 15+ engineers"],
+  ["Client interface", "Cisco ODC · end-customer escalations"],
   ["Governance", "EU AI Act · ISO/IEC 42001"],
   ["Relocation", "Willing to move to the job location"],
 ];
@@ -66,7 +67,7 @@ export default function Hero() {
             Technical Project Manager | Group Technical Architect | AI Transformation and Governance Leader
           </h2>
           <p className="panel-org">
-            HCL Technologies · Cisco Offshore Development Centre
+            HCL Technologies · Cisco Offshore Development Center
           </p>
 
           <dl className="fact-list">

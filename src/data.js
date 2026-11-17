@@ -42,18 +42,21 @@ export const CV_LOCALES = [
   {
     code: "en",
     label: "English",
+    note: "EU-format CV",
     pdf: CV_URL,
     docx: CV_DOCX_URL,
   },
   {
     code: "de",
-    label: "Deutsch",
+    label: "German",
+    note: "Deutsch · Tabellarischer Lebenslauf",
     pdf: `${CV_BASE}Arul_Muruga_Lebenslauf_DE.pdf`,
     docx: `${CV_BASE}Arul_Muruga_Lebenslauf_DE.docx`,
   },
   {
     code: "fr",
-    label: "Français",
+    label: "French",
+    note: "Français · CV au format UE",
     pdf: `${CV_BASE}Arul_Muruga_EU_CV_FR.pdf`,
     docx: `${CV_BASE}Arul_Muruga_EU_CV_FR.docx`,
   },
@@ -84,7 +87,7 @@ export const about =
 export const navLinks = [
   { id: "impact", label: "Impact" },
   { id: "profile", label: "Profile" },
-  { id: "programme", label: "Programme" },
+  { id: "programme", label: "Program" },
   { id: "experience", label: "Experience" },
   { id: "expertise", label: "Expertise" },
   { id: "ats", label: "ATS check" },
@@ -96,13 +99,13 @@ export const metrics = [
     value: 664,
     suffix: "+",
     label: "FTE-hours returned",
-    note: "Saved through the AI transformation programme in Year 1.",
+    note: "Saved through the AI transformation program in Year 1.",
   },
   {
     value: 93,
     suffix: "%",
     label: "Build-time reduction",
-    note: "Delivered for the wider engineering organisation.",
+    note: "Delivered for the wider engineering organization.",
   },
   {
     value: 6,
@@ -132,7 +135,7 @@ export const workingKnowledge = {
     "PSM I — in progress",
   ],
   note:
-    "Day-to-day Agile and Jira use comes from hands-on engineering; Agile programme management at scale is in progress (PSM I).",
+    "Day-to-day Agile and Jira use comes from hands-on engineering; Agile program management at scale is in progress (PSM I).",
 };
 
 export const resourceDemand = {
@@ -187,7 +190,7 @@ export const earlierRoles = [
     company: "Iwiz Hitec Solutions",
     meta: "Jul 2008 – Jul 2009 · 1 yr 1 mo · Chennai",
     bullets: [
-      "Engineered IoT-based solutions, including sensor drivers and interfaces, optimising system performance and reliability.",
+      "Engineered IoT-based solutions, including sensor drivers and interfaces, optimizing system performance and reliability.",
       "Improved PCB designs, enhancing energy efficiency and sensitivity for IoT applications.",
       "Conducted product demonstrations, showcasing technical capabilities to support business development.",
     ],
@@ -212,7 +215,7 @@ export const programmePhases = [
     number: "02",
     title: "Embed & enable",
     copy:
-      "Put tooling in the hands of teams, with seven Technical Leads acting as multipliers across eight teams. Adoption is built team by team, not announced organisation-wide.",
+      "Put tooling in the hands of teams, with seven Technical Leads acting as multipliers across eight teams. Adoption is built team by team, not announced organization-wide.",
     tags: ["Champion model", "Hands-on enablement", "8 teams"],
   },
   {
@@ -242,7 +245,7 @@ export const arc = [
   },
   {
     number: "04",
-    title: "Programme leadership",
+    title: "Program leadership",
     copy: "65 engineers, 8 teams, and a leadership bench of 7 Technical Leads and 15+ engineers.",
   },
   {
@@ -268,19 +271,31 @@ export const expertise = [
   {
     icon: "compass",
     title: "Technical leadership",
-    copy: "Programme direction, architecture ownership and a leadership bench that can carry scale.",
+    copy: "Program direction, architecture ownership and a leadership bench that can carry scale.",
     tags: [
-      "Technical programme management",
+      "Technical program management",
       "Technical architecture",
-      "AI transformation programme leadership",
+      "AI transformation program leadership",
       "Delivery governance",
       "Team leadership",
     ],
   },
   {
+    icon: "handshake",
+    title: "Client & stakeholder management",
+    copy: "Client-facing delivery inside the Cisco ODC: translating client priorities into plans, and resolving issues with the end customer on the client's behalf.",
+    tags: [
+      "Client management",
+      "End-customer liaison",
+      "Stakeholder engagement",
+      "Escalation & issue resolution",
+      "ODC delivery",
+    ],
+  },
+  {
     icon: "scale",
     title: "AI governance",
-    copy: "Adoption that can be defended: aligned to recognised frameworks and measured in outcomes.",
+    copy: "Adoption that can be defended: aligned to recognized frameworks and measured in outcomes.",
     tags: ["AI transformation", "EU AI Act", "ISO/IEC 42001", "Adoption measurement"],
   },
 ];
@@ -296,7 +311,7 @@ export const principles = [
     number: "02",
     title: "Outcomes over activity",
     copy:
-      "Tool counts are activity. FTE hours returned, build time saved and SLA held are outcomes. A programme scorecard should make that distinction impossible to miss.",
+      "Tool counts are activity. FTE hours returned, build time saved and SLA held are outcomes. A program scorecard should make that distinction impossible to miss.",
   },
   {
     number: "03",

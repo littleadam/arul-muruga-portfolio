@@ -282,6 +282,13 @@ button {
   border-bottom-color: var(--navy);
 }
 
+.text-link.cv-menu-trigger {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
 /* ---------- buttons ---------- */
 
 .btn {
@@ -474,6 +481,8 @@ button {
   font-weight: 600;
   letter-spacing: 0.07em;
   text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
   color: var(--ink);
   transition: border-color 140ms var(--ease), background 140ms var(--ease);
 }
@@ -1743,7 +1752,7 @@ button {
 
 .expertise-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 0;
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
@@ -1788,6 +1797,11 @@ button {
 .expertise-grid > .reveal:nth-child(4) {
   --accent: var(--rust);
   --tint: var(--rust-tint);
+}
+
+.expertise-grid > .reveal:nth-child(5) {
+  --accent: var(--navy);
+  --tint: var(--navy-tint);
 }
 
 .expertise-icon {
@@ -3012,7 +3026,7 @@ button {
     padding-right: 0;
   }
 
-  .expertise-grid > .reveal:nth-child(-n + 2) .expertise-card {
+  .expertise-grid > .reveal:nth-child(-n + 4) .expertise-card {
     border-bottom: 1px solid var(--rule-soft);
   }
 
@@ -3091,6 +3105,22 @@ button {
   .mobile-cv {
     width: 100%;
     margin-top: 1.5rem;
+  }
+
+  .mobile-cv .cv-menu-wrap {
+    display: flex;
+    width: 100%;
+  }
+
+  .mobile-cv .cv-menu-trigger {
+    width: 100%;
+  }
+
+  .mobile-cv .cv-menu {
+    position: static;
+    width: 100%;
+    margin-top: 8px;
+    box-shadow: none;
   }
 
   .mobile-meta {

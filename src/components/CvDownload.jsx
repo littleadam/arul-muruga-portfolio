@@ -1,16 +1,22 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { ChevronDown, Download } from "lucide-react";
-import { CV_FORMATS } from "../data";
+import { CV_FORMATS, CV_LOCALES } from "../data";
 
 export default function CvDownload({
   label = "Download CV",
   variant = "secondary",
   align = "left",
+  mode = "formats",
+  triggerClassName,
 }) {
   const [open, setOpen] = useState(false);
   const wrapRef = useRef(null);
   const buttonRef = useRef(null);
   const menuRef = useRef(null);
+  const menuId = useId();
+
+  const options = mode === "locales" ? CV_LOCALES : CV_FORMATS;
+  const triggerClass = triggerClassName ?? `btn btn-${variant}`;
 
   useEffect(() => {
     if (!open) return undefined;
@@ -40,9 +46,9 @@ export default function CvDownload({
       <button
         ref={buttonRef}
         type="button"
-        className={`btn btn-${variant} cv-menu-trigger`}
+        className={`${triggerClass} cv-menu-trigger`}
         aria-expanded={open}
-        aria-controls="cv-format-menu"
+        aria-controls={menuId}
         onClick={() => setOpen((value) => !value)}
       >
         <Download size={15} strokeWidth={1.9} aria-hidden="true" />
@@ -56,42 +62,54 @@ export default function CvDownload({
       </button>
 
       <div
-        id="cv-format-menu"
+        id={menuId}
         ref={menuRef}
         className="cv-menu"
         role="group"
-        aria-label="Choose CV format"
+        aria-label={mode === "locales" ? "Choose CV language" : "Choose CV format"}
         tabIndex={-1}
         hidden={!open}
       >
-        <p className="cv-menu-title">Choose a format</p>
+        <p className="cv-menu-title">
+          {mode === "locales" ? "Choose language" : "Choose a format"}
+        </p>
         <ul>
-          {CV_FORMATS.map((format) => (
-            <li key={format.code}>
-              <span className="cv-menu-info">
-                <strong>{format.label}</strong>
-                <span>
-                  {format.lang} · {format.note}
+          {options.map((option) => {
+            const linkLabel =
+              mode === "locales"
+                ? `${option.label} CV`
+                : `${option.label} (${option.lang})`;
+            return (
+              <li key={option.code}>
+                <span className="cv-menu-info">
+                  <strong>{option.label}</strong>
+                  <span>
+                    {mode === "locales"
+                      ? option.note
+                      : `${option.lang} · ${option.note}`}
+                  </span>
                 </span>
-              </span>
-              <span className="cv-menu-links">
-                <a
-                  href={format.pdf}
-                  download
-                  aria-label={`${format.label} (${format.lang}), PDF`}
-                >
-                  PDF
-                </a>
-                <a
-                  href={format.docx}
-                  download
-                  aria-label={`${format.label} (${format.lang}), Word`}
-                >
-                  DOCX
-                </a>
-              </span>
-            </li>
-          ))}
+                <span className="cv-menu-links">
+                  <a
+                    href={option.pdf}
+                    download
+                    aria-label={`${linkLabel}, PDF`}
+                    onClick={() => setOpen(false)}
+                  >
+                    PDF
+                  </a>
+                  <a
+                    href={option.docx}
+                    download
+                    aria-label={`${linkLabel}, Word`}
+                    onClick={() => setOpen(false)}
+                  >
+                    DOCX
+                  </a>
+                </span>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>

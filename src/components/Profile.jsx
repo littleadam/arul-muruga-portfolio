@@ -2,9 +2,10 @@ import { about, availability, certifications } from "../data";
 import Reveal from "./Reveal";
 
 const mandate = [
-  ["Programmes", "3 concurrent engineering programmes"],
-  ["Organisation", "65 engineers · 8 teams"],
+  ["Programs", "3 concurrent engineering programs"],
+  ["Organization", "65 engineers · 8 teams"],
   ["Direct leadership", "7 Technical Leads · 15+ engineers"],
+  ["Client interface", "Cisco ODC · end-customer escalations"],
   ["Focus", "AI-native delivery · technical architecture"],
   ["Governance", "EU AI Act · ISO/IEC 42001"],
   ["Based", `${availability.base} · open to relocation`],
@@ -32,15 +33,21 @@ export default function Profile() {
               I have built my career from the systems layer up — Linux, TCP/IP
               networking, C/C++ and Python — across eighteen years of engineering
               experience, including a long tenure at HCL Technologies on a Cisco
-              Offshore Development Centre since 2010.
+              Offshore Development Center since 2010.
             </p>
             <p>
-              Today I run three concurrent engineering programmes across 65
+              Today I run three concurrent engineering programs across 65
               engineers in eight teams, with seven Technical Leads and 15+
               engineers reporting directly and full commercial accountability. The work is equal parts adoption, measurement and
               governance: putting AI tooling into engineers&rsquo; hands, proving
               the return in hours and build time, and aligning it to frameworks
               such as the EU AI Act and ISO/IEC 42001.
+            </p>
+            <p>
+              I work inside the client ODC as the delivery-facing interface to
+              Cisco and, when issues cross into their customers&rsquo;
+              environments, to the end customer on Cisco&rsquo;s behalf —
+              aligning priorities, running joint debugging and owning resolution.
             </p>
             <p>
               I sit where architecture, delivery and governance meet — close
@@ -70,8 +77,8 @@ export default function Profile() {
               <span className="mandate-index">2026</span>
             </div>
             <h3 className="mandate-title">
-              Three concurrent engineering programmes across a 65-engineer
-              organisation.
+              Three concurrent engineering programs across a 65-engineer
+              organization.
             </h3>
 
             <dl className="mandate-list">

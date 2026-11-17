@@ -27,10 +27,10 @@ export const cv = {
     ["linkedin.com/in/aruldswamy", "github.com/littleadam", "littleadam.github.io/arul-muruga-portfolio"],
   ],
   summary:
-    "Technical Project Manager and Group Technical Architect with 18 years of engineering experience, built on a deep foundation in Linux, networking (TCP/IP), C/C++ and Python, and a long tenure at HCL Technologies on a Cisco Offshore Development Centre. Has progressed from hands-on systems engineering to leading an AI transformation programme across 65 engineers in 8 teams, with 15+ engineers and 7 Technical Leads under direct management. PMP certified, Generative AI Leader (Google Cloud) and AWS Certified AI Practitioner. Working knowledge of Agile/Scrum and Jira from hands-on engineering, currently studying Agile programme management at scale (PSM I in progress). Focused on AI-native engineering delivery, AI governance and measurable business outcomes.",
+    "Technical Project Manager and Group Technical Architect with 18 years of engineering experience, built on a deep foundation in Linux, networking (TCP/IP), C/C++ and Python, and a long tenure at HCL Technologies on a Cisco Offshore Development Center. Has progressed from hands-on systems engineering to leading an AI transformation program across 65 engineers in 8 teams, with 15+ engineers and 7 Technical Leads under direct management. Client-facing delivery lead in the ODC: aligns priorities with Cisco stakeholders and works directly with Cisco's end customers to debug and resolve issues on the client's behalf. PMP certified, Generative AI Leader (Google Cloud) and AWS Certified AI Practitioner. Working knowledge of Agile/Scrum and Jira from hands-on engineering, currently studying Agile program management at scale (PSM I in progress). Focused on AI-native engineering delivery, AI governance and measurable business outcomes.",
   achievements: [
-    "664+ FTE-hours saved through the AI transformation programme in Year 1.",
-    "93% build-time reduction delivered for the wider engineering organisation.",
+    "664+ FTE-hours saved through the AI transformation program in Year 1.",
+    "93% build-time reduction delivered for the wider engineering organization.",
     "2 AI tools deployed in Year 1 and 6 in Year 2, against a 12-tool target for Year 3.",
     "100% SLA compliance sustained across 13+ consecutive weeks.",
     "65 engineers across 8 teams, with 7 Technical Leads and 15+ engineers reporting directly.",
@@ -38,16 +38,17 @@ export const cv = {
   experience: [
     {
       title: "Technical Project Manager & Group Technical Architect",
-      org: "HCL Technologies - Cisco Offshore Development Centre (ODC)",
+      org: "HCL Technologies - Cisco Offshore Development Center (ODC)",
       location: "Chennai, India",
       dates: "2010 - Present",
       intro:
         "Career progression: Member Technical Staff > Lead Engineer > Technical Lead > Senior Technical Lead > Technical Project Manager.",
       bullets: [
-        "Lead an AI transformation programme across the Cisco ODC, driving adoption of AI tooling across engineering teams.",
-        "Manage and mentor a leadership bench of 7 Technical Leads and 15+ engineers directly, within a wider organisation of 65 engineers across 8 teams.",
+        "Lead an AI transformation program across the Cisco ODC, driving adoption of AI tooling across engineering teams.",
+        "Manage and mentor a leadership bench of 7 Technical Leads and 15+ engineers directly, within a wider organization of 65 engineers across 8 teams.",
+        "Serve as the client-facing delivery interface in the Cisco ODC: align priorities with Cisco stakeholders and work directly with Cisco's end customers to debug and resolve issues on the client's behalf.",
         "Own technical architecture and delivery governance, applying Linux, networking, C/C++, Python, Jenkins, Docker and multi-architecture build expertise built over 18 years.",
-        "Apply Agile/Scrum and Jira at engineer level in day-to-day delivery; currently studying Agile programme management at scale (PSM I in progress).",
+        "Apply Agile/Scrum and Jira at engineer level in day-to-day delivery; currently studying Agile program management at scale (PSM I in progress).",
         "Head resource demand management for the delivery unit: gather open positions from teams, coordinate candidate sourcing with HR, select interview panelists, collect panel reviews and update HR teams.",
         "Align AI adoption with the EU AI Act and ISO/IEC 42001, treating governance as a design input rather than retrofitted documentation.",
         "Handle on-site, remote and 24x7 support teams, monthly process compliance audits (PCA) and SoW renewals.",
@@ -71,7 +72,7 @@ export const cv = {
       location: "Chennai, India",
       dates: "Jul 2008 - Jul 2009",
       bullets: [
-        "Engineered IoT-based solutions, including sensor drivers and interfaces, optimising system performance and reliability.",
+        "Engineered IoT-based solutions, including sensor drivers and interfaces, optimizing system performance and reliability.",
         "Improved PCB designs, enhancing energy efficiency and sensitivity for IoT applications.",
         "Conducted product demonstrations, showcasing technical capabilities to support business development.",
       ],
@@ -110,12 +111,12 @@ export const cv = {
     {
       label: "Leadership & delivery",
       value:
-        "Technical programme management, technical architecture, delivery governance, resource demand management, team leadership",
+        "Technical program management, technical architecture, delivery governance, client and end-customer management, resource demand management, team leadership",
     },
     {
       label: "Agile & tooling",
       value:
-        "Agile/Scrum (working knowledge, engineer level), Jira, Agile programme management at scale (PSM I in progress)",
+        "Agile/Scrum (working knowledge, engineer level), Jira, Agile program management at scale (PSM I in progress)",
     },
   ],
   certifications: [
@@ -125,7 +126,7 @@ export const cv = {
   ],
   additional: [
     "Independent project: algorithmic options trading system in Python, with RSI-based signals, GTT stop-loss management, trailing stops and daily loss-cap controls.",
-    "Open to technical programme management, architecture and AI transformation leadership roles in engineering delivery and responsible AI governance.",
+    "Open to technical program management, architecture and AI transformation leadership roles in engineering delivery and responsible AI governance.",
     "Willing to relocate to the job location.",
     "References available on request.",
   ],
@@ -157,7 +158,7 @@ export const cvDe = {
     ["linkedin.com/in/aruldswamy", "github.com/littleadam", "littleadam.github.io/arul-muruga-portfolio"],
   ],
   summary:
-    "Technischer Projektmanager und Gruppen-Technikarchitekt mit 18 Jahren Erfahrung im Engineering und einem fundierten Fundament in Linux, Netzwerktechnik (TCP/IP), C/C++ und Python sowie einer langen Tätigkeit bei HCL Technologies in einem Cisco Offshore Development Centre. Vom operativen Systemtechniker zum Leiter eines KI-Transformationsprogramms mit 65 Ingenieuren in 8 Teams, davon 15+ Ingenieure und 7 Technical Leads in direkter Führungsverantwortung. PMP-zertifiziert, Generative AI Leader (Google Cloud) und AWS Certified AI Practitioner. Praktische Kenntnisse in Agile/Scrum und Jira auf Ingenieursebene; derzeit Weiterbildung im agilen Programmmanagement im Unternehmensmaßstab (PSM I in Vorbereitung). Schwerpunkt auf KI-nativer Engineering-Delivery, KI-Governance und messbaren Geschäftsergebnissen.",
+    "Technischer Projektmanager und Gruppen-Technikarchitekt mit 18 Jahren Erfahrung im Engineering und einem fundierten Fundament in Linux, Netzwerktechnik (TCP/IP), C/C++ und Python sowie einer langen Tätigkeit bei HCL Technologies in einem Cisco Offshore Development Centre. Vom operativen Systemtechniker zum Leiter eines KI-Transformationsprogramms mit 65 Ingenieuren in 8 Teams, davon 15+ Ingenieure und 7 Technical Leads in direkter Führungsverantwortung. Kundenseitige Delivery-Schnittstelle im ODC: richtet Prioritäten mit Cisco-Stakeholdern aus und arbeitet direkt mit den Endkunden von Cisco zusammen, um Probleme im Auftrag des Kunden zu debuggen und zu beheben. PMP-zertifiziert, Generative AI Leader (Google Cloud) und AWS Certified AI Practitioner. Praktische Kenntnisse in Agile/Scrum und Jira auf Ingenieursebene; derzeit Weiterbildung im agilen Programmmanagement im Unternehmensmaßstab (PSM I in Vorbereitung). Schwerpunkt auf KI-nativer Engineering-Delivery, KI-Governance und messbaren Geschäftsergebnissen.",
   achievements: [
     "664+ FTE-Stunden durch das KI-Transformationsprogramm im ersten Jahr eingespart.",
     "93 % kürzere Build-Zeiten für die gesamte Engineering-Organisation.",
@@ -175,7 +176,7 @@ export const cvDe = {
         "Karriereverlauf: Member Technical Staff > Lead Engineer > Technical Lead > Senior Technical Lead > Technical Project Manager.",
       bullets: [
         "Leitung eines KI-Transformationsprogramms im Cisco ODC und Förderung der Einführung von KI-Tools in den Engineering-Teams.",
-        "Führung und Mentoring eines Führungskräfte-Pools aus 7 Technical Leads und 15+ Ingenieuren direkt, innerhalb einer Organisation von 65 Ingenieuren in 8 Teams.",
+        "Führung und Mentoring eines Führungskräfte-Pools aus 7 Technical Leads und 15+ Ingenieuren direkt, innerhalb einer Organisation von 65 Ingenieuren in 8 Teams; zusätzlich kundenseitige Delivery-Schnittstelle zu Cisco und dessen Endkunden.",
         "Verantwortung für technische Architektur und Delivery-Governance auf Basis von Linux, Netzwerktechnik, C/C++, Python, Jenkins, Docker und Multi-Architektur-Builds aus 18 Jahren Praxis.",
         "Anwendung von Agile/Scrum und Jira auf Ingenieursebene im Tagesgeschäft; derzeit Weiterbildung im agilen Programmmanagement im Unternehmensmaßstab (PSM I in Vorbereitung).",
         "Leitung des Ressourcenbedarfsmanagements für die Delivery-Unit: Erfassung offener Stellen aus den Teams, Koordination der Kandidatensuche mit HR, Auswahl von Interview-Panels, Sammlung der Panel-Bewertungen und Aktualisierung der HR-Teams.",
@@ -244,7 +245,7 @@ export const cvDe = {
     {
       label: "Führung & Delivery",
       value:
-        "Technisches Programmmanagement, technische Architektur, Delivery-Governance, Ressourcenbedarfsmanagement, Teamführung",
+        "Technisches Programmmanagement, technische Architektur, Delivery-Governance, Kunden- und Endkundenmanagement, Ressourcenbedarfsmanagement, Teamführung",
     },
     {
       label: "Agile & Tools",
@@ -291,7 +292,7 @@ export const cvFr = {
     ["linkedin.com/in/aruldswamy", "github.com/littleadam", "littleadam.github.io/arul-muruga-portfolio"],
   ],
   summary:
-    "Chef de projet technique et architecte technique de groupe avec 18 ans d'expérience en ingénierie, appuyé sur une solide maîtrise de Linux, des réseaux (TCP/IP), du C/C++ et de Python, ainsi qu'une longue carrière chez HCL Technologies au sein d'un Cisco Offshore Development Centre. Évolution du poste d'ingénieur système opérationnel vers la direction d'un programme de transformation IA réunissant 65 ingénieurs répartis en 8 équipes, dont 15+ ingénieurs et 7 Technical Leads en management direct. Certifié PMP, Generative AI Leader (Google Cloud) et AWS Certified AI Practitioner. Connaissances pratiques d'Agile/Scrum et de Jira au niveau ingénieur ; formation en cours en gestion de programmes Agile à l'échelle (PSM I en cours). Focus sur la livraison d'ingénierie native IA, la gouvernance de l'IA et des résultats commerciaux mesurables.",
+    "Chef de projet technique et architecte technique de groupe avec 18 ans d'expérience en ingénierie, appuyé sur une solide maîtrise de Linux, des réseaux (TCP/IP), du C/C++ et de Python, ainsi qu'une longue carrière chez HCL Technologies au sein d'un Cisco Offshore Development Centre. Évolution du poste d'ingénieur système opérationnel vers la direction d'un programme de transformation IA réunissant 65 ingénieurs répartis en 8 équipes, dont 15+ ingénieurs et 7 Technical Leads en management direct. Interface de livraison côté client au sein de l'ODC : aligne les priorités avec les parties prenantes de Cisco et travaille directement avec les clients finaux de Cisco pour déboguer et résoudre les incidents pour le compte du client. Certifié PMP, Generative AI Leader (Google Cloud) et AWS Certified AI Practitioner. Connaissances pratiques d'Agile/Scrum et de Jira au niveau ingénieur ; formation en cours en gestion de programmes Agile à l'échelle (PSM I en cours). Focus sur la livraison d'ingénierie native IA, la gouvernance de l'IA et des résultats commerciaux mesurables.",
   achievements: [
     "664+ heures ETP économisées grâce au programme de transformation IA dès la première année.",
     "Réduction de 93 % des temps de build pour l'ensemble de l'organisation d'ingénierie.",
@@ -310,6 +311,7 @@ export const cvFr = {
       bullets: [
         "Diriger un programme de transformation IA au sein du Cisco ODC et favoriser l'adoption des outils d'IA par les équipes d'ingénierie.",
         "Manager et accompagner un vivier de direction composé de 7 Technical Leads et de 15+ ingénieurs en direct, au sein d'une organisation de 65 ingénieurs répartis en 8 équipes.",
+        "Servir d'interface de livraison côté client au sein du Cisco ODC : aligner les priorités avec les parties prenantes de Cisco et travailler directement avec les clients finaux de Cisco pour déboguer et résoudre les incidents pour le compte du client.",
         "Piloter l'architecture technique et la gouvernance de la livraison en mobilisant Linux, les réseaux, le C/C++, Python, Jenkins, Docker et les builds multi-architectures acquis en 18 ans.",
         "Utiliser Agile/Scrum et Jira au niveau ingénieur dans le travail quotidien ; formation en cours en gestion de programmes Agile à l'échelle (PSM I en cours).",
         "Diriger la gestion de la demande de ressources pour l'unité de livraison : recueil des postes ouverts auprès des équipes, coordination du sourcing avec les RH, sélection des jurys d'entretien, collecte des évaluations et mise à jour des équipes RH.",
@@ -374,7 +376,7 @@ export const cvFr = {
     {
       label: "Direction & delivery",
       value:
-        "Gestion de programmes techniques, architecture technique, gouvernance de la livraison, gestion de la demande de ressources, encadrement d'équipes",
+        "Gestion de programmes techniques, architecture technique, gouvernance de la livraison, gestion des clients et des clients finaux, gestion de la demande de ressources, encadrement d'équipes",
     },
     {
       label: "Agile & outils",

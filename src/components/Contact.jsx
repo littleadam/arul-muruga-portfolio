@@ -68,7 +68,7 @@ export default function Contact() {
               Ready to drive <em>AI at scale</em> for your business.
             </h2>
             <p className="contact-lede">
-              Open to Technical Programme Manager, Group Technical Architect and
+              Open to Technical Program Manager, Group Technical Architect and
               AI Transformation leadership roles where AI adoption, engineering
               productivity, and responsible governance need to translate into
               measurable business outcomes.
