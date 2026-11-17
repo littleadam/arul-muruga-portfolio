@@ -96,39 +96,6 @@ function generatePdf(cv, outFile) {
       doc.y = Math.max(doc.y, y + 12) + 2.5;
     };
 
-    const projectEntry = (project, index) => {
-      ensure(44);
-      if (index > 0) doc.moveDown(0.2);
-      const y = doc.y;
-      doc
-        .font("Helvetica-Bold")
-        .fontSize(9.2)
-        .fillColor(COLORS.ink)
-        .text(project.name, MARGIN, y, {
-          width: CONTENT_WIDTH * 0.64,
-          lineGap: 1,
-        });
-      const afterName = doc.y;
-      doc
-        .font("Helvetica")
-        .fontSize(8)
-        .fillColor(COLORS.muted)
-        .text(project.meta, MARGIN, y, {
-          width: CONTENT_WIDTH,
-          align: "right",
-          lineGap: 0.8,
-        });
-      doc.y = Math.max(afterName, doc.y) + 1.5;
-      doc
-        .font("Helvetica-Oblique")
-        .fontSize(8)
-        .fillColor(COLORS.muted)
-        .text(project.tech, MARGIN, doc.y, {
-          width: CONTENT_WIDTH,
-          lineGap: 0.6,
-        });
-      doc.y += 3;
-    };
 
     const rightAlignedLine = (left, right, options = {}) => {
       ensure(18);
@@ -208,10 +175,6 @@ function generatePdf(cv, outFile) {
       job.bullets.forEach(bullet);
     });
 
-    if (cv.projects?.length) {
-      section(cv.labels.projects);
-      cv.projects.forEach(projectEntry);
-    }
 
     section(cv.labels.education);
     rightAlignedLine(cv.education.degree, cv.education.dates, { size: 9.6 });

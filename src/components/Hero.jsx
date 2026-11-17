@@ -1,9 +1,10 @@
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight, BadgeCheck, MapPin } from "lucide-react";
 import { certifications, profile } from "../data";
 import CvDownload from "./CvDownload";
 
 const atAGlance = [
   ["Tenure", "18 years in engineering"],
+  ["Credential", "PMP® certified · PMI, valid to Dec 2027"],
   ["At HCL", "Since 2010"],
   ["Scope", "65 engineers · 8 teams"],
   ["Leadership", "7 Technical Leads · 15+ engineers"],
@@ -26,6 +27,13 @@ export default function Hero() {
             {profile.name.split(" ")[0]}&nbsp;
             <span>{profile.name.split(" ").slice(1).join(" ")}</span>
           </h1>
+
+          <p className="hero-pmp">
+            <BadgeCheck size={17} strokeWidth={2} aria-hidden="true" />
+            <span>
+              <strong>PMP®</strong> Certified · Project Management Professional
+            </span>
+          </p>
 
           <p className="hero-role">
             Technical Project Manager <span aria-hidden="true">/</span> Group

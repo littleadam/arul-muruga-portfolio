@@ -60,6 +60,13 @@ export const CV_LOCALES = [
     pdf: `${CV_BASE}Arul_Muruga_EU_CV_FR.pdf`,
     docx: `${CV_BASE}Arul_Muruga_EU_CV_FR.docx`,
   },
+  {
+    code: "europass",
+    label: "Europass",
+    note: "English · Europass standard",
+    pdf: `${CV_BASE}Arul_Muruga_Europass_CV.pdf`,
+    docx: `${CV_BASE}Arul_Muruga_Europass_CV.docx`,
+  },
 ];
 
 export const availability = {

@@ -540,6 +540,32 @@ button {
   color: var(--navy);
 }
 
+.hero-pmp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 1rem;
+  padding: 7px 13px 7px 10px;
+  border: 1px solid var(--rule-strong);
+  border-left: 3px solid var(--ochre);
+  background: var(--surface);
+  color: var(--ink-2);
+  font-size: 0.79rem;
+  line-height: 1.35;
+  letter-spacing: 0.015em;
+}
+
+.hero-pmp svg {
+  flex: none;
+  color: var(--ochre);
+}
+
+.hero-pmp strong {
+  color: var(--ink);
+  font-weight: 650;
+  letter-spacing: 0.04em;
+}
+
 .hero-role {
   margin-bottom: 1.5rem;
   font-size: 0.8rem;
@@ -3504,6 +3530,11 @@ button {
 
   .hero-title {
     font-size: clamp(2.6rem, 13vw, 3.4rem);
+  }
+
+  .hero-pmp {
+    font-size: 0.73rem;
+    padding: 6px 10px 6px 9px;
   }
 
   .hero-role {

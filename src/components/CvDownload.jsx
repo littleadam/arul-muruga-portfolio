@@ -66,12 +66,12 @@ export default function CvDownload({
         ref={menuRef}
         className="cv-menu"
         role="group"
-        aria-label={mode === "locales" ? "Choose CV language" : "Choose CV format"}
+        aria-label={mode === "locales" ? "Choose CV language or format" : "Choose CV format"}
         tabIndex={-1}
         hidden={!open}
       >
         <p className="cv-menu-title">
-          {mode === "locales" ? "Choose language" : "Choose a format"}
+          {mode === "locales" ? "Choose language or format" : "Choose a format"}
         </p>
         <ul>
           {options.map((option) => {

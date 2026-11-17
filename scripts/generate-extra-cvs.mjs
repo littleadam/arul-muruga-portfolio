@@ -164,6 +164,15 @@ function pdfSection(doc, title, accent = PDF_COLORS.accent) {
   doc.y = lineY + 8;
 }
 
+function pdfParagraph(doc, text) {
+  const block = { text, size: 8.9, after: 2 };
+  if (doc.y + blockHeight(doc, block, CONTENT_WIDTH) > BOTTOM) {
+    doc.addPage();
+    doc.y = MARGIN;
+  }
+  doc.y = drawBlock(doc, block, MARGIN, doc.y, CONTENT_WIDTH);
+}
+
 // rows: [{ label, blocks: [...] }]
 function pdfTable(doc, rows, options = {}) {
   const labelWidth = options.labelWidth ?? LABEL_WIDTH;
@@ -301,30 +310,6 @@ function jobBlocks(job, options = {}) {
   return blocks;
 }
 
-function pdfProjects(doc, cvData, accent) {
-  if (!cvData.projects?.length) return;
-  pdfSection(doc, cvData.labels.projects, accent);
-  cvData.projects.forEach((project) => {
-    const blocks = [
-      {
-        text: `${project.name} — ${project.meta}`,
-        bold: true,
-        size: 8.9,
-        after: 0,
-      },
-      { text: project.tech, italics: true, size: 7.9, color: PDF_COLORS.muted, after: 4 },
-    ];
-    blocks.forEach((block) => {
-      const height = blockHeight(doc, block, CONTENT_WIDTH);
-      if (doc.y + height > BOTTOM) {
-        doc.addPage();
-        doc.y = MARGIN;
-      }
-      doc.y = drawBlock(doc, block, MARGIN, doc.y, CONTENT_WIDTH);
-    });
-  });
-}
-
 /* ---------------------------------------------------------------- */
 /* German tabular Lebenslauf                                         */
 /* ---------------------------------------------------------------- */
@@ -371,6 +356,9 @@ function writeLebenslaufPdf(cvData, outFile) {
       .text("Tabellarischer Lebenslauf", MARGIN, doc.y + 2, { width: CONTENT_WIDTH });
     doc.y += 4;
 
+    pdfSection(doc, "Profil");
+    pdfParagraph(doc, cvData.summary);
+
     pdfSection(doc, "Persönliche Daten");
     pdfTable(
       doc,
@@ -387,8 +375,6 @@ function writeLebenslaufPdf(cvData, outFile) {
       cvData.experience.map((job) => ({ label: job.dates, blocks: jobBlocks(job) })),
       { divider: true }
     );
-
-    pdfProjects(doc, cvData, PDF_COLORS.accent);
 
     pdfSection(doc, "Ausbildung");
     pdfTable(doc, [
@@ -524,6 +510,9 @@ function writeEuropassPdf(cvData, outFile) {
       .stroke();
     doc.y = ruleY + 4;
 
+    pdfSection(doc, "Profile", PDF_COLORS.europass);
+    pdfParagraph(doc, cvData.summary);
+
     pdfSection(doc, "Personal information", PDF_COLORS.europass);
     pdfTable(
       doc,
@@ -540,8 +529,6 @@ function writeEuropassPdf(cvData, outFile) {
       cvData.experience.map((job) => ({ label: job.dates, blocks: jobBlocks(job) })),
       { labelWidth: 108, labelColor: PDF_COLORS.europass, divider: true }
     );
-
-    pdfProjects(doc, cvData, PDF_COLORS.europass);
 
     pdfSection(doc, "Education and training", PDF_COLORS.europass);
     pdfTable(doc, [
@@ -758,34 +745,6 @@ function docxJobBlocks(job) {
   return blocks;
 }
 
-function docxProjects(cvData) {
-  if (!cvData.projects?.length) return [];
-  return cvData.projects.flatMap((project) => [
-    new Paragraph({
-      spacing: { before: 80, after: 10 },
-      children: [
-        new TextRun({
-          text: `${project.name} — ${project.meta}`,
-          bold: true,
-          size: 18,
-          color: DOCX_COLORS.ink,
-        }),
-      ],
-    }),
-    new Paragraph({
-      spacing: { after: 55 },
-      children: [
-        new TextRun({
-          text: project.tech,
-          italics: true,
-          size: 16,
-          color: DOCX_COLORS.muted,
-        }),
-      ],
-    }),
-  ]);
-}
-
 function docxFooter(text) {
   return new Footer({
     children: [
@@ -881,6 +840,14 @@ function buildLebenslaufDocx(cvData) {
         children: [],
       }),
 
+      docxSectionHeading("Profil", DOCX_COLORS.accent),
+      new Paragraph({
+        spacing: { after: 120 },
+        children: [
+          new TextRun({ text: cvData.summary, size: 18, color: DOCX_COLORS.ink }),
+        ],
+      }),
+
       docxSectionHeading("Persönliche Daten", DOCX_COLORS.accent),
       docxTable(
         personalRows(cvData, LEBENSLAUF_LABELS).map(([label, value]) => ({
@@ -895,9 +862,6 @@ function buildLebenslaufDocx(cvData) {
         cvData.experience.map((job) => ({ label: job.dates, blocks: docxJobBlocks(job) })),
         { divider: true }
       ),
-
-      docxSectionHeading(cvData.labels.projects, DOCX_COLORS.accent),
-      ...docxProjects(cvData),
 
       docxSectionHeading("Ausbildung", DOCX_COLORS.accent),
       docxTable([
@@ -1004,6 +968,14 @@ function buildEuropassDocx(cvData) {
         ],
       }),
 
+      docxSectionHeading("Profile", DOCX_COLORS.europass),
+      new Paragraph({
+        spacing: { after: 120 },
+        children: [
+          new TextRun({ text: cvData.summary, size: 18, color: DOCX_COLORS.ink }),
+        ],
+      }),
+
       docxSectionHeading("Personal information", DOCX_COLORS.europass),
       docxTable(
         personalRows(cvData, EUROPASS_LABELS).map(([label, value]) => ({
@@ -1018,9 +990,6 @@ function buildEuropassDocx(cvData) {
         cvData.experience.map((job) => ({ label: job.dates, blocks: docxJobBlocks(job) })),
         { labelWidth: 1850, labelColor: DOCX_COLORS.europass, divider: true }
       ),
-
-      docxSectionHeading(cvData.labels.projects, DOCX_COLORS.europass),
-      ...docxProjects(cvData),
 
       docxSectionHeading("Education and training", DOCX_COLORS.europass),
       docxTable(

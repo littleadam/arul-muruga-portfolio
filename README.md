@@ -75,9 +75,9 @@ npm run cv
 
 The generator writes the EU-format CVs first, then the German tabular
 Lebenslauf and the Europass CV (`scripts/generate-extra-cvs.mjs`), all from the
-same source content. Every CV includes a compact selected-projects index
-(project, role/team, customers and technologies); the website’s “Projects”
-section carries the full contribution detail.
+same source content. CVs lead with a keyword-rich profile summary and quantified
+achievements for fast recruiter screening; the website’s “Projects” section
+carries the full project contribution detail.
 
 The ATS check runs entirely in the browser. It reads pasted text or extracts
 text from PDF, DOCX, TXT and Markdown files locally; no job description is
