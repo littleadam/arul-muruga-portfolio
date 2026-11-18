@@ -16,9 +16,10 @@ export default function DeliveryWork() {
             </h2>
           </div>
           <p className="section-lede">
-            Seven Cisco platform programs, two embedded-product roles and a career
-            spent moving from hands-on engineering into team leadership. Open a
-            project for the role, the customers and the technical scope.
+            Eight Cisco platform and support programs, two embedded-product roles
+            and a career spent moving from hands-on engineering into team
+            leadership. Open a project for the role, the customers and the
+            technical scope.
           </p>
         </Reveal>
 

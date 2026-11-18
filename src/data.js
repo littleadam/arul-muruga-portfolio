@@ -221,7 +221,7 @@ export const deliveryProjects = [
   {
     company: "HCL Technologies · Cisco ODC",
     era: "2010 – present",
-    note: "Delivery leadership, platform engineering and field support for Cisco and its end customers.",
+    note: "Current focus: AI transformation, Cisco Secured Linux and 24x7 support; earlier platform engineering and field support for Cisco and its end customers.",
     projects: [
       {
         name: "Cisco Secured Linux",
@@ -236,6 +236,32 @@ export const deliveryProjects = [
           "Joined customer debugging sessions to analyze how protected applications behaved at runtime and resolve integration issues.",
           "Integrated security instrumentation with Jenkins CI/CD pipelines, enabling threat modeling before release rather than after deployment.",
           "Took over the engagement and doubled client billing within a year, backed by a 7/7 customer satisfaction score sustained for four years.",
+        ],
+      },
+      {
+        name: "24x7 infrastructure and application support",
+        role: "Technical Project Manager",
+        team: "6 engineers · 3 rotating shifts",
+        customers: "Cisco Systems",
+        tech: [
+          "24x7 operations",
+          "Incident management",
+          "SLA governance",
+          "Escalation management",
+          "Root-cause analysis",
+          "Automation",
+          "AI-assisted support",
+        ],
+        summary:
+          "One of three active engagements, alongside Cisco Secured Linux and the AI transformation program: round-the-clock infrastructure and application support for Cisco Systems, with SLA-backed incident response and operational governance.",
+        contributions: [
+          "Managed end-to-end 24x7 support across three rotating shifts of six engineers, maintaining uninterrupted coverage, incident resolution and SLA compliance.",
+          "Established operational governance for shift handovers, incident ownership, escalation management, daily health checks and service performance reviews.",
+          "Partnered with Cisco stakeholders on service reviews, critical escalations, operational risks and alignment of support priorities with business needs.",
+          "Built standardized SOPs, troubleshooting guides and incident documentation, with structured knowledge transfer and cross-training that reduced single-person dependency.",
+          "Drove proactive problem management through recurring incident analysis, root-cause reviews and preventive actions that improved service stability.",
+          "Identified automation for health checks, log analysis, incident reporting and operational monitoring, and championed AI-assisted troubleshooting and knowledge retrieval.",
+          "Tracked operational KPIs, SLA trends and incident patterns, driving corrective and preventive actions that sustained 7/7 customer satisfaction every quarter for a year.",
         ],
       },
       {
